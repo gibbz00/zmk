@@ -1,10 +1,11 @@
-identifier: nice60
-name: nice!60
+identifier: borne
+name: borne-keyboard
 type: mcu
 arch: arm
 toolchain:
   - zephyr
   - gnuarmemb
+# TODO:
 supported:
   - adc
   - usb_device
