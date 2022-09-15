@@ -21,6 +21,11 @@ CONFIG_FLASH=y
 CONFIG_FLASH_PAGE_LAYOUT=y
 CONFIG_FLASH_MAP=y
 
+# Deep sleep
+# https://zmk.dev/docs/config/power#kconfig
+CONFIG_ZMK_SLEEP=y
+# CONFIG_ZMK_IDLE_SLEEP_TIMEOUT=9000000
+
 # TODO: probably remove:
 # CONFIG_ZMK_RGB_UNDERGLOW=y
 # CONFIG_WS2812_STRIP=y

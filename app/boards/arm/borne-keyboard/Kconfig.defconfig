@@ -1,10 +1,15 @@
 # Copyright (c) 2022 Gabriel Hansson
 # SPDX-License-Identifier: MIT
 
-if BOARD_BORNE
+# https://zmk.dev/docs/development/new-shield 
+if SHIELD_BORNE_LEFT
+	config ZMK_KEYBOARD_NAME default "borne-keyboard"
+	config ZMK_SPLIT_ROLE_CENTRAL default y
+endif
 
-config ZMK_KEYBOARD_NAME
-	default "borne-keyboard"
+if SHIELD_BORNE_LEFT || SHIELD_BORNE_RIGHT
+	config ZMK_SPLIT default y
+endif
 
 if USB_DEVICE_STACK
 

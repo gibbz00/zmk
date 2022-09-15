@@ -1,0 +1,8 @@
+# Copyright (c) 2022 Gabriel Hansson
+# SPDX-License-Identifier: MIT
+
+config SHIELD_BORNE_LEFT
+	def_bool $(shields_list_contains,borne_left)
+
+config SHIELD_BORNE_RIGHT
+	def_bool $(shields_list_contains,borne_right)

@@ -1,0 +1,19 @@
+/*
+ * Copyright (c) 2022 Gabriel Hansson
+ *
+ * SPDX-License-Identifier: MIT
+ */
+
+#include "borne.dtsi"
+
+&kscan_left {
+    // &gpio[0,1] are specific to the nrf plattform
+    input-gpios = 
+        <&gpio0 6  (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>,
+        <&gpio0 14 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>,
+        <&gpio0 4  (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>,
+        <&gpio0 7  (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>,
+        <&gpio0 3  (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>,
+        <&gpio0 1  (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>,
+    ;
+};

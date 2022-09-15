@@ -4,7 +4,6 @@
  * SPDX-License-Identifier: MIT
  */
 
-
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
 // TODO: Suspect some won't be used
@@ -20,7 +19,7 @@
 
 / {
 	behaviors {
-		ctrl_mod_tap_dance: ctrl_mod_tap_dance {
+		ctrl_mod_tap_dance {
 			compatible = "zmk, behavior-tab-dance";
 			label = "CTRL_MOD_TAP_DANCE";
 			#binding-cells = <0>;
@@ -41,7 +40,7 @@
 	// https://zmk.dev/docs/behaviors/macros#convenience-c-macro
 	macros {
 		// ö = U+00D6
-		diaeresis_o: diaeresis_o {
+		diaeresis_o {
 			label = "diaeresis_o";
 			compatible = "zmk,behavior-macro";
 			// Default is 100ms 
@@ -59,7 +58,7 @@
 		};
 
 		// ä = U+00C4
-		diaeresis_a: diaeresis_a {
+		diaeresis_a {
 			label = "diaeresis_o";
 			compatible = "zmk,behavior-macro";
 			tap-ms = <10>;
@@ -75,7 +74,7 @@
 		};
 
 		// å = U+00C5
-		ring_a: ring_a {
+		ring_a {
 			label = "ring_a";
 			compatible = "zmk,behavior-macro";
 			tap-ms = <10>;
