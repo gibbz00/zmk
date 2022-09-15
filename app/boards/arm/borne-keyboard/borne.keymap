@@ -4,49 +4,104 @@
  * SPDX-License-Identifier: MIT
  */
 
+
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
 // TODO: Suspect some won't be used
 #include <dt-bindings/zmk/rgb.h>
 #include <dt-bindings/zmk/bt.h>
 
+// Number is the order in which the layer nodes appear
+// #define name and node names are arbitrary
+#define DEFAULT 0
+#define RAISE 1
+#define LOWER 2
+#define FUNCTION 3
+
 / {
-//	behaviors {
-//        hm: homerow_mods {
-//            compatible = "zmk,behavior-hold-tap";
-//            label = "homerow mods";
-//            #binding-cells = <2>;
-//            tapping_term_ms = <200>;
-//            flavor = "tap-preferred";
-//            bindings = <&kp>, <&kp>;
-//        };
-//    };
 	keymap {
 		compatible = "zmk,keymap";
+		conditional_layers {
+			compatible = "zmk,conditional-layers";
+			tri_layer {
+				if-layers = <RAISE LOWER>;
+				then-layer = <FUNCTION>;
+			};
+		};
+
+		//IMPROVEMENT: Unicode sequency macros are super boilerplatey, can probably be replaced with preprocessor macro
+		// https://zmk.dev/docs/behaviors/macros#convenience-c-macro
+		macros {
+			// ö = U+00D6
+			diaeresis_o: diaeresis_o {
+				label = "diaeresis_o";
+				compatible = "zmk,behavior-macro";
+				// Default is 100ms 
+				// https://zmk.dev/docs/behaviors/macros#tap-time
+				tap-ms = <10>;
+				#binding-cells = <0>;
+				bindings =
+					<&macro_press &kp LSHIFT>, 
+					<&macro_press &kp LCTRL>, 
+					<&macro_tab &kp U>,
+					<&macro_release &kp LSHIFT>, 
+					<&macro_release &kp LCTRL>, 
+					<&kp N0 &kp N0 &kp D &kp N6 &kp RET>,
+				;
+			};
+
+			// ä = U+00C4
+			diaeresis_a: diaeresis_a {
+				label = "diaeresis_o";
+				compatible = "zmk,behavior-macro";
+				tap-ms = <10>;
+				#binding-cells = <0>;
+				bindings =
+					<&macro_press &kp LSHIFT>, 
+					<&macro_press &kp LCTRL>, 
+					<&macro_tab &kp U>,
+					<&macro_release &kp LSHIFT>, 
+					<&macro_release &kp LCTRL>, 
+					<&kp N0 &kp N0 &kp C &kp N4 &kp RET>,
+				;
+			};
+
+			// å = U+00C5
+			ring_a: ring_a {
+				label = "ring_a";
+				compatible = "zmk,behavior-macro";
+				tap-ms = <10>;
+				#binding-cells = <0>;
+				bindings =
+					<&macro_press &kp LSHIFT>, 
+					<&macro_press &kp LCTRL>, 
+					<&macro_tab &kp U>,
+					<&macro_release &kp LSHIFT>, 
+					<&macro_release &kp LCTRL>, 
+					<&kp N0 &kp N0 &kp C &kp N5 &kp RET>,
+				;
+			};
+		};
 		
 		// http://www.keyboard-layout-editor.com/#/gists/0e81bf405ebbc268280f0506f7d0e771
 		default_layer {
 		/* TODO: 
-			binding for Ö Ä Å Lower Raise Lctrl/mod?
-			do I need lalt and Rctrl, lshift?
-			TEMP: using backspace (bspc) as placeholder for layer keys
-			TEMP: using X as placeholder for nordic keys
+			Raise Lctrl/mod?
 		*/
 			bindings = <
 				&kp Q &kp W &kp E &kp R &kp T &kp Y &kp U &kp I &kp O &kp P 
-				&kp A &kp S &kp D &kp F &kp G &kp H &kp J &kp K &kp L &kp X
-				&kp Z &kp X &kp C &kp V &kp B &kp N &kp M &kp X &kp X &none
-				&kp LCTRL &kp BSPC &kp SPACE &kp RSHIFT &kp BSPC &kp RALT
+				&kp A &kp S &kp D &kp F &kp G &kp H &kp J &kp K &kp L &diaeresis_o
+				&kp Z &kp X &kp C &kp V &kp B &kp N &kp M &ring_a &diaeresis_a &none
+				&kp LCTRL &mo RAISE &kp SPACE &kp RSHIFT &mo LOWER &kp RALT
 			>;
 		};
 
-		//TODO: do i need to use the standard layer names?
 		raised_layer {
 			bindings = <
 				&kp EXCLAMATION &kp AT_SIGN &kp HASH &kp DOLLAR &kp AMPERSAND &kp BSPC &kp RET &kp ESC &kp TAB &none
 				&kp SEMICOLON &kp COMMA &kp PERIOD &kp &kp COLON &none &kp LEFT_ARROW &kp DOWN_ARROW &kp UP_ARROW &kp RIGHT_ARROW &none
 				&kp QUESTION &kp TILDE &kp GRAVE &kp SINGLE_QUOTE &kp DOUBLE_QUOTE &none &none &none &none &none
-				&kp LCTRL &kp BSPC &kp SPACE &kp RSHIFT &kp BSPC &kp RALT
+				&kp LCTRL &trans &kp SPACE &kp RSHIFT &trans &kp RALT
 			>;
 		};
 
@@ -55,7 +110,7 @@
 				&kp KP_LEFT_PARENTHESIS &kp KP_RIGHT_PARENTHESIS &kp LESS_THAN &kp GREATER_THAN &none &kp KP_PLUS &kp MINUS &kp ASTERISK &kp CARET &kp EQUAL
 				&kp N1 &kp N2 &kp N3 &kp N4 &kp N5 &kp N6 &kp N7 &kp N8 &kp N9 &kp N0
 				&kp LEFT_BRACKET &kp RIGHT_BRACKET &kp LEFT_BRACE &kp RIGHT_BRACE &none &kp BACKSLASH &kp PIPE &kp SLASH &kp PERCENT &kp UNDERSCORE
-				&kp LCTRL &kp BSPC &kp SPACE &kp RSHIFT &kp BSPC &kp RALT
+				&kp LCTRL &trans &kp SPACE &kp RSHIFT &trans &kp RALT
 			>;
 		};
 
@@ -64,7 +119,7 @@
 				&kp CAPSLOCK &kp SCROLLLOCK &kp K_VOLUME_DOWN &kp K_VOLUME_UP &kp K_MUTE &kp HOME &kp PAGE_DOWN &kp PAGE_UP &kp END &kp K_CONTEXT_MENU
 				&kp F1 &kp F2 &kp F3 &kp F4 &kp F5 &kp F6 &kp F7 &kp F8 &kp F9 &kp F10
 				&kp F11 &kp F12 &kp K_PREVIOUS &kp K_NEXT &kp K_PLAY_PAUSE &kp PRINTSCREEN &kp C_BRIGHTNESS_INC &kp C_BRIGHTNESS_DEC &kp INSERT &kp DELETE
-				&kp LCTRL &kp BSPC &kp SPACE &kp RSHIFT &kp BSPC &kp RALT
+				&kp LCTRL &trans &kp SPACE &kp RSHIFT &trans &kp RALT
 			>;
 		};
 	};
