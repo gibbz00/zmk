@@ -3,28 +3,24 @@
 
 # https://zmk.dev/docs/development/new-shield 
 if SHIELD_BORNE_LEFT
-	config ZMK_KEYBOARD_NAME default "borne-keyboard"
-	config ZMK_SPLIT_ROLE_CENTRAL default y
+	config ZMK_KEYBOARD_NAME 
+		default "Borne Keyboard"
+	config ZMK_SPLIT_ROLE_CENTRAL
+		default y
 endif
 
 if SHIELD_BORNE_LEFT || SHIELD_BORNE_RIGHT
-	config ZMK_SPLIT default y
+	config ZMK_SPLIT
+		default y
+	config BT_CTLR
+		default BT
+	config ZMK_BLE
+		default y
+	config ZMK_USB
+		default y
+
+	if USB_DEVICE_STACK
+		config USB_NRFX
+			 default y
+	endif
 endif
-
-if USB_DEVICE_STACK
-
-config USB_NRFX
-	default y
-
-endif # USB_DEVICE_STACK
-
-config BT_CTLR
-	default BT
-
-config ZMK_BLE
-	default y
-
-config ZMK_USB
-	default y
-
-endif # BOARD_BORNE

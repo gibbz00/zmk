@@ -5,7 +5,6 @@ arch: arm
 toolchain:
   - zephyr
   - gnuarmemb
-# TODO:
 supported:
   - adc
   - usb_device
