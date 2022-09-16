@@ -21,16 +21,3 @@ if BOARD_BORNE
 		default BOARD_BORNE_CHARGER_CURRENT_100MA
 	endchoice
 endif
-
-# https://zmk.dev/docs/development/new-shield 
-if SHIELD_BORNE_LEFT
-	config ZMK_KEYBOARD_NAME 
-		default "Borne Keyboard"
-	config ZMK_SPLIT_ROLE_CENTRAL
-		default y
-endif
-
-if SHIELD_BORNE_LEFT || SHIELD_BORNE_RIGHT
-	config ZMK_SPLIT
-		default y
-endif

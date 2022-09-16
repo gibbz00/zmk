@@ -1,10 +1,12 @@
 file_format: "1"
 id: borne
 name: borne-keyboard
-type: board
-arch: arm
+type: shield
 features:
   - keys
+siblings:
+  - borne_left
+  - borne_right
 outputs:
   - usb
   - ble
