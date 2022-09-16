@@ -1,17 +1,7 @@
 # Copyright (c) 2022 Gabriel Hansson
 # SPDX-License-Identifier: MIT
 
-# https://zmk.dev/docs/development/new-shield 
-if SHIELD_BORNE_LEFT
-	config ZMK_KEYBOARD_NAME 
-		default "Borne Keyboard"
-	config ZMK_SPLIT_ROLE_CENTRAL
-		default y
-endif
-
-if SHIELD_BORNE_LEFT || SHIELD_BORNE_RIGHT
-	config ZMK_SPLIT
-		default y
+if BOARD_BORNE
 	config BT_CTLR
 		default BT
 	config ZMK_BLE
@@ -23,4 +13,24 @@ if SHIELD_BORNE_LEFT || SHIELD_BORNE_RIGHT
 		config USB_NRFX
 			 default y
 	endif
+
+	config PINMUX
+		default y
+
+	choice BOARD_BORNE_CHARGER_CURRENT
+		default BOARD_BORNE_CHARGER_CURRENT_100MA
+	endchoice
+endif
+
+# https://zmk.dev/docs/development/new-shield 
+if SHIELD_BORNE_LEFT
+	config ZMK_KEYBOARD_NAME 
+		default "Borne Keyboard"
+	config ZMK_SPLIT_ROLE_CENTRAL
+		default y
+endif
+
+if SHIELD_BORNE_LEFT || SHIELD_BORNE_RIGHT
+	config ZMK_SPLIT
+		default y
 endif

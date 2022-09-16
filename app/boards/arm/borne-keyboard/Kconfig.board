@@ -1,7 +1,11 @@
 # Copyright (c) 2022 Gabriel Hansson
 # SPDX-License-Identifier: MIT
-# TODO: Not sure why I need this
 
+config BOARD_BORNE
+	bool "borne"
+	depends on SOC_NRF52840_QIAA
+
+# Should maybe be moved to a Kcofig.shield file
 # https://zmk.dev/docs/development/new-shield
 config SHIELD_BORNE_LEFT
 	# argument in weston build command
