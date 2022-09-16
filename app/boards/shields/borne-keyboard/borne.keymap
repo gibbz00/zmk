@@ -17,13 +17,13 @@
 
 / {
 	behaviors {
-		ctrl_mod_tap_dance {
+		ctrl_mod_tap_dance: ctrl_mod_tap_dance {
 			compatible = "zmk, behavior-tab-dance";
 			label = "CTRL_MOD_TAP_DANCE";
 			#binding-cells = <0>;
-			tapping-term-ms = 400;
+			tapping-term-ms = <400>;
 			bindings = <&kp LEFT_CONTROL>, <&kp LEFT_GUI>;
-		}
+		};
 	};
 
 	conditional_layers {
@@ -38,7 +38,7 @@
 	// https://zmk.dev/docs/behaviors/macros#convenience-c-macro
 	macros {
 		// ö = U+00D6
-		diaeresis_o {
+		diaeresis_o: diaeresis_o {
 			label = "diaeresis_o";
 			compatible = "zmk,behavior-macro";
 			// Default is 100ms 
@@ -48,15 +48,15 @@
 			bindings =
 				<&macro_press &kp LSHIFT>, 
 				<&macro_press &kp LCTRL>, 
-				<&macro_tab &kp U>,
+				<&macro_tap &kp U>,
 				<&macro_release &kp LSHIFT>, 
 				<&macro_release &kp LCTRL>, 
-				<&kp N0 &kp N0 &kp D &kp N6 &kp RET>,
+				<&kp N0 &kp N0 &kp D &kp N6 &kp RET>
 			;
 		};
 
 		// ä = U+00C4
-		diaeresis_a {
+		diaeresis_a: diaeresis_a {
 			label = "diaeresis_o";
 			compatible = "zmk,behavior-macro";
 			tap-ms = <10>;
@@ -64,15 +64,15 @@
 			bindings =
 				<&macro_press &kp LSHIFT>, 
 				<&macro_press &kp LCTRL>, 
-				<&macro_tab &kp U>,
+				<&macro_tap &kp U>,
 				<&macro_release &kp LSHIFT>, 
 				<&macro_release &kp LCTRL>, 
-				<&kp N0 &kp N0 &kp C &kp N4 &kp RET>,
+				<&kp N0 &kp N0 &kp C &kp N4 &kp RET>
 			;
 		};
 
 		// å = U+00C5
-		ring_a {
+		ring_a: ring_a {
 			label = "ring_a";
 			compatible = "zmk,behavior-macro";
 			tap-ms = <10>;
@@ -80,10 +80,10 @@
 			bindings =
 				<&macro_press &kp LSHIFT>, 
 				<&macro_press &kp LCTRL>, 
-				<&macro_tab &kp U>,
+				<&macro_tap &kp U>,
 				<&macro_release &kp LSHIFT>, 
 				<&macro_release &kp LCTRL>, 
-				<&kp N0 &kp N0 &kp C &kp N5 &kp RET>,
+				<&kp N0 &kp N0 &kp C &kp N5 &kp RET>
 			;
 		};
 	};
@@ -109,7 +109,7 @@
 			bindings = <
 				&kp EXCLAMATION &kp AT_SIGN &kp HASH &kp DOLLAR &kp AMPERSAND &kp BSPC &kp RET &kp ESC &kp TAB &none
 				&kp SEMICOLON &kp COMMA &kp PERIOD &kp &kp COLON &none &kp LEFT_ARROW &kp DOWN_ARROW &kp UP_ARROW &kp RIGHT_ARROW &none
-				&kp QUESTION &kp TILDE &kp GRAVE &kp SINGLE_QUOTE &kp DOUBLE_QUOTE &none &none &none &none &none
+				&kp QUESTION &kp TILDE &kp GRAVE &kp SINGLE_QUOTE &kp DOUBLE_QUOTES &none &none &none &none &none
 				&trans &trans &trans &trans &trans &trans
 			>;
 		};
