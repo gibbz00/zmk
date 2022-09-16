@@ -68,32 +68,32 @@
 		compatible = "gpio-leds";
 		blue_led: led_0 {
 			gpios = <&gpio0 15 GPIO_ACTIVE_HIGH>;
-			label = "Blue LED";
+			label = "BLUE LED";
 		};
 	};
 
-	ext-power {
-		compatible = "zmk,ext-power-generic";
-		label = "EXT_POWER";
-		//TODO: huh?
-		control-gpios = <&gpio0 5 GPIO_ACTIVE_LOW>;
-		init-delay-ms = <50>;
-	};
 
-
+	// TODO:
+	// Vbat is currently designed to wrong the wrong pin. (no analog)
+	// Update when revision 2 fixes this
+	// vbatt: vbatt {
+	// 	compatible = "zmk,battery-voltage-divider";
+	// 	label = "BATTERY";
+	// 	io-channels = <&adc 1>;
+	// 	output-ohms = <10000000>;
+	// 	full-ohms = <(10000000 + 4000000)>;
+	// };
+	// TEMP: placeholder for rev 2 using vddh voltage measurements
 	vbatt: vbatt {
-		compatible = "zmk,battery-voltage-divider";
+		compatible = "zmk,battery-nrf-vddh";
 		label = "BATTERY";
-		//TODO: adc 1 or 2?
-		io-channels = <&adc 1>;
-		output-ohms = <10000000>;
-		full-ohms = <(10000000 + 4000000)>;
 	};
 };
 
-&adc {
-	status = "okay";
-};
+// Part of the vbat pin mishap
+// &adc {
+// 	status = "okay";
+// };
 
 &gpiote {
 	status = "okay";
@@ -120,10 +120,6 @@
 	rx-pin = <4>;
 };
 
-&spi0 {
-	// ??
-};
-
 &usbd {
 	status = "okay";
 	cdc_acm_uart: cdc_acm_uart {
@@ -135,45 +131,43 @@
 &flash0 {
 	/*
 	 * For more information, see:
-	 * http://docs.zephyrproject.org/latest/devices/dts/flash_partitions.html
+	 * https://docs.zephyrproject.org/latest/build/dts/api/api.html#fixed-flash-partitions
+	 * https://docs.zephyrproject.org/latest/build/dts/api/bindings/mtd/fixed-partitions.html?
 	 */
 	partitions {
 		compatible = "fixed-partitions";
 		#address-cells = <1>;
 		#size-cells = <1>;
 
-		/* TODO: which adresses to i use?
-			nice60: 
-			sd: 0x00000000 0x00001000
-			code 0x00001000 0x000d3000
-			application 0x000d4000 0x000f3fff 
-				storage 0x000d4000 0x00020000
-				boot 0x000f4000 0x0000c000
-
-			mikoto: 
+		/* 
 			softdevice: 0x00000000 0x00026000
 			code_partition 0x00026000 0x000c6000
-			application 0x000ec000 0x000f3fff 
-				storage 0x000ec000 0x00008000
-				boot 0x000f4000 0x0000c000
+			application allocaation 0x000ec000-0x000f3fff 
+				storage 0x000ec000-0x00008000
+				boot 0x000f4000-0x0000c000
 		*/
 		sd_partition: partition@0 {
-			label = "mbr";
-			reg = <0x00000000 0x00001000>;
+			label = "softdevice";
+			reg = <0x00000000 0x00026000>;
 		};
 
-		code_partition: partition@1000 {
+		code_partition: partition@26000 {
 			label = "code_partition";
-			reg = <0x00001000 0x000d3000>;
+			reg = <0x00026000 0x000c6000>;
 		};
+
+		/*
+		 * The flash starting at 0x000ec000 and ending at
+		 * 0x000f3fff is reserved for use by the application.
+		 */
 
 		/*
 		 * Storage partition will be used by FCB/LittleFS/NVS
 		 * if enabled.
 		 */
-		storage_partition: partition@d4000 {
+		storage_partition: partition@ec000 {
 			label = "storage";
-			reg = <0x000d4000 0x00020000>;
+			reg = <0x000ec000 0x0008000>;
 		};
 
 		boot_partition: partition@f4000 {
