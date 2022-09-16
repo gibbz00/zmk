@@ -11,8 +11,8 @@
 #include <sys/sys_io.h>
 #include <devicetree.h>
 
-#define CHARGE_CTRL_1 = 26
-#define CHARGE_CTRL_2 = 4
+#define CHARGE_CTRL_1 26
+#define CHARGE_CTRL_2 4
 
 static int pinmux_borne_init(const struct device *port) {
     ARG_UNUSED(port);

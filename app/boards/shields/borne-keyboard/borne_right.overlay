@@ -6,7 +6,7 @@
 
 #include "borne.dtsi"
 
-&kscan_right {
+&kscan0 {
     // &gpio[0,1] are specific to the nrf plattform
     // Top to bottom left to right physical positions
     input-gpios = 

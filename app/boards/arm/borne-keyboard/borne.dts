@@ -49,9 +49,9 @@
 };
 
 // Part of the vbat pin mishap
-// &adc {
-// 	status = "okay";
-// };
+&adc {
+	status = "okay";
+};
 
 &gpiote {
 	status = "okay";

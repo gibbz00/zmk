@@ -18,7 +18,7 @@
 / {
 	behaviors {
 		ctrl_mod_tap_dance: ctrl_mod_tap_dance {
-			compatible = "zmk, behavior-tab-dance";
+			compatible = "zmk,behavior-tap-dance";
 			label = "CTRL_MOD_TAP_DANCE";
 			#binding-cells = <0>;
 			tapping-term-ms = <400>;
@@ -108,7 +108,7 @@
 		raised_layer {
 			bindings = <
 				&kp EXCLAMATION &kp AT_SIGN &kp HASH &kp DOLLAR &kp AMPERSAND &kp BSPC &kp RET &kp ESC &kp TAB &none
-				&kp SEMICOLON &kp COMMA &kp PERIOD &kp &kp COLON &none &kp LEFT_ARROW &kp DOWN_ARROW &kp UP_ARROW &kp RIGHT_ARROW &none
+				&kp SEMICOLON &kp COMMA &kp PERIOD &kp COLON &none &kp LEFT_ARROW &kp DOWN_ARROW &kp UP_ARROW &kp RIGHT_ARROW &none
 				&kp QUESTION &kp TILDE &kp GRAVE &kp SINGLE_QUOTE &kp DOUBLE_QUOTES &none &none &none &none &none
 				&trans &trans &trans &trans &trans &trans
 			>;

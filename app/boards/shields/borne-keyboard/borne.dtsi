@@ -26,29 +26,7 @@
 
 	// https://zmk.dev/docs/development/new-shield
 	kscan0: kscan {
-		compatible = "zmk,kscan-composite";
+		compatible = "zmk,kscan-gpio-direct";
 		label = "KSCAN";
-		rows = <4>;
-		columns = <10>;
-
-		kscan_left {
-			kscan = <&kscan_left>;
-		};
-
-		kscan_right {
-			kscan = <&kscan_right>;
-			column-offset = <5>;
-		};
-	};
-
-	// respecitive GPIO pin configurations found in borne_[left,right].overlay
-	kscan_left: kscan_left {
-		compatible = "zmk,kscan-gpio-direct";
-		label = "KSCAN_LEFT";
-	};
-
-	kscan_right: kscan_right {
-		compatible = "zmk,kscan-gpio-direct";
-		label = "KSCAN_RIGHT";
 	};
 };
