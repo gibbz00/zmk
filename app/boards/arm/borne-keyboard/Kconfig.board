@@ -4,14 +4,3 @@
 config BOARD_BORNE
 	bool "borne"
 	depends on SOC_NRF52840_QIAA
-
-# Should maybe be moved to a Kcofig.shield file
-# https://zmk.dev/docs/development/new-shield
-config SHIELD_BORNE_LEFT
-	# argument in weston build command
-    def_bool $(shields_list_contains,borne_left)
-	depends on SOC_NRF52840_QIAA
-
-config SHIELD_BORNE_RIGHT
-    def_bool $(shields_list_contains,borne_right)
-	depends on SOC_NRF52840_QIAA
