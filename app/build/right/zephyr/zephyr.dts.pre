@@ -683,7 +683,7 @@
   compatible = "fixed-partitions";
   #address-cells = <1>;
   #size-cells = <1>;
-# 107 "/home/gibbz/projects/under-construction/borne-keyboard/firmware/zmk/app/boards/arm/borne-keyboard/borne.dts"
+# 109 "/home/gibbz/projects/under-construction/borne-keyboard/firmware/zmk/app/boards/arm/borne-keyboard/borne.dts"
   sd_partition: partition@0 {
    label = "softdevice";
    reg = <0x00000000 0x00026000>;
@@ -693,7 +693,7 @@
    label = "code_partition";
    reg = <0x00026000 0x000c6000>;
   };
-# 126 "/home/gibbz/projects/under-construction/borne-keyboard/firmware/zmk/app/boards/arm/borne-keyboard/borne.dts"
+# 128 "/home/gibbz/projects/under-construction/borne-keyboard/firmware/zmk/app/boards/arm/borne-keyboard/borne.dts"
   storage_partition: partition@ec000 {
    label = "storage";
    reg = <0x000ec000 0x0008000>;

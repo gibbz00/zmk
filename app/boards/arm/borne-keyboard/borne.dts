@@ -98,6 +98,8 @@
 		#size-cells = <1>;
 
 		/* 
+                        // Depends on the softdevice verion
+                        // SoftDevice size/version e.g S140 v6 is 0x26000, v7 is 0x27000
 			softdevice: 0x00000000 0x00026000
 			code_partition 0x00026000 0x000c6000
 			application allocaation 0x000ec000-0x000f3fff 
