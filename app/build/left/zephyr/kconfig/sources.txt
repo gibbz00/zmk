@@ -71,6 +71,10 @@
 /home/gibbz/projects/under-construction/borne-keyboard/firmware/zmk/app/boards/shields/naked60/Kconfig.shield
 /home/gibbz/projects/under-construction/borne-keyboard/firmware/zmk/app/boards/shields/nibble/Kconfig.defconfig
 /home/gibbz/projects/under-construction/borne-keyboard/firmware/zmk/app/boards/shields/nibble/Kconfig.shield
+/home/gibbz/projects/under-construction/borne-keyboard/firmware/zmk/app/boards/shields/nice_view/Kconfig.defconfig
+/home/gibbz/projects/under-construction/borne-keyboard/firmware/zmk/app/boards/shields/nice_view/Kconfig.shield
+/home/gibbz/projects/under-construction/borne-keyboard/firmware/zmk/app/boards/shields/nice_view_adapter/Kconfig.defconfig
+/home/gibbz/projects/under-construction/borne-keyboard/firmware/zmk/app/boards/shields/nice_view_adapter/Kconfig.shield
 /home/gibbz/projects/under-construction/borne-keyboard/firmware/zmk/app/boards/shields/osprette/Kconfig.defconfig
 /home/gibbz/projects/under-construction/borne-keyboard/firmware/zmk/app/boards/shields/osprette/Kconfig.shield
 /home/gibbz/projects/under-construction/borne-keyboard/firmware/zmk/app/boards/shields/pancake/Kconfig.defconfig
@@ -109,6 +113,7 @@
 /home/gibbz/projects/under-construction/borne-keyboard/firmware/zmk/app/drivers/display/Kconfig.il0323
 /home/gibbz/projects/under-construction/borne-keyboard/firmware/zmk/app/drivers/gpio/Kconfig
 /home/gibbz/projects/under-construction/borne-keyboard/firmware/zmk/app/drivers/gpio/Kconfig.595
+/home/gibbz/projects/under-construction/borne-keyboard/firmware/zmk/app/drivers/gpio/Kconfig.max7318
 /home/gibbz/projects/under-construction/borne-keyboard/firmware/zmk/app/drivers/gpio/Kconfig.mcp23017
 /home/gibbz/projects/under-construction/borne-keyboard/firmware/zmk/app/drivers/kscan/Kconfig
 /home/gibbz/projects/under-construction/borne-keyboard/firmware/zmk/app/drivers/sensor/Kconfig

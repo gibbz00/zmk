@@ -93,7 +93,7 @@ __devicehdl_DT_N_S_behaviors_S_behavior_reset[] = { DEVICE_HANDLE_SEP, DEVICE_HA
  *   - /macros/ring_a
  */
 const device_handle_t __aligned(2) __attribute__((__section__(".__device_handles_pass2")))
-__devicehdl_DT_N_S_behaviors_S_behavior_key_press[] = { DEVICE_HANDLE_SEP, DEVICE_HANDLE_SEP, 13, 16, 12, 14, DEVICE_HANDLE_ENDS };
+__devicehdl_DT_N_S_behaviors_S_behavior_key_press[] = { DEVICE_HANDLE_SEP, DEVICE_HANDLE_SEP, 12, 16, 14, 13, DEVICE_HANDLE_ENDS };
 
 /* 12 : /macros/ring_a:
  * Direct Dependencies:
