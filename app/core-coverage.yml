@@ -2,13 +2,19 @@ board:
 - nice_nano_v2
 - nrfmicro_13
 - proton_c
+- borne_keyboard
 shield:
 - corne_left
 - corne_right
 - romac
 - settings_reset
+- borne_left
+- borne_right
 - tidbit
 include:
+- board: borne_keyboard
+  shield: borne_left
+  shield: borne_right
 - board: bdn9_rev2
 - board: nice60
 - board: seeeduino_xiao_ble
