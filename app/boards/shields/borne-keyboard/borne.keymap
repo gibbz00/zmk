@@ -11,18 +11,18 @@
 // Number is the order in which the layer nodes appear
 // #define name and node names are arbitrary
 #define DEFAULT 0
-#define RAISE 1
-#define LOWER 2
+#define LOWER 1
+#define RAISE 2
 #define FUNCTION 3
 
 / {
 	behaviors {
-		ctrl_mod_tap_dance: ctrl_mod_tap_dance {
+		mod_alt_tap_dance: mod_alt_tap_dance {
 			compatible = "zmk,behavior-tap-dance";
-			label = "CTRL_MOD_TAP_DANCE";
+			label = "MOD_ALT_TAP_DANCE";
 			#binding-cells = <0>;
 			tapping-term-ms = <400>;
-			bindings = <&kp LEFT_CONTROL>, <&kp LEFT_GUI>;
+			bindings = <&kp LEFT_GUI>, <&kp LEFT_ALT>;
 		};
 	};
 
@@ -91,30 +91,26 @@
 	keymap {
 		compatible = "zmk,keymap";
 
-		
 		// http://www.keyboard-layout-editor.com/#/gists/0e81bf405ebbc268280f0506f7d0e771
 		default_layer {
-		/* TODO: 
-			Raise Lctrl/mod?
-		*/
 			bindings = <
 				&kp Q &kp W &kp E &kp R &kp T &kp Y &kp U &kp I &kp O &kp P 
 				&kp A &kp S &kp D &kp F &kp G &kp H &kp J &kp K &kp L &diaeresis_o
-				&kp Z &kp X &kp C &kp V &kp B &kp N &kp M &ring_a &diaeresis_a &none
-				&ctrl_mod_tap_dance &mo RAISE &kp SPACE &kp RSHIFT &mo LOWER &kp RALT
+				&kp Z &kp X &kp C &kp V &kp B &kp N &kp M &ring_a &diaeresis_a &kp LEFT_META
+				&kp LEFT_CONTROL &mo RAISE &mo LOWER &kp SPACE &kp RSHIFT &mod_alt_tap_dance
 			>;
 		};
 
-		raised_layer {
+		lowered_layer {
 			bindings = <
-				&kp EXCLAMATION &kp AT_SIGN &kp HASH &kp DOLLAR &kp AMPERSAND &kp BSPC &kp RET &kp ESC &kp TAB &none
-				&kp SEMICOLON &kp COMMA &kp PERIOD &kp COLON &none &kp LEFT_ARROW &kp DOWN_ARROW &kp UP_ARROW &kp RIGHT_ARROW &none
+				&kp EXCLAMATION &kp AT_SIGN &kp HASH &kp DOLLAR &kp AMPERSAND &kp SEMICOLON &kp COMMA &kp PERIOD &kp COLON &none
+				&kp TAB &kp BSPC &kp ESC &kp RET &none &kp LEFT_ARROW &kp DOWN_ARROW &kp UP_ARROW &kp RIGHT_ARROW &none
 				&kp QUESTION &kp TILDE &kp GRAVE &kp SINGLE_QUOTE &kp DOUBLE_QUOTES &none &none &none &none &none
 				&trans &trans &trans &trans &trans &trans
 			>;
 		};
 
-		lowered_layer {
+		raised_layer {
 			bindings = <
 				&kp KP_LEFT_PARENTHESIS &kp KP_RIGHT_PARENTHESIS &kp LESS_THAN &kp GREATER_THAN &none &kp KP_PLUS &kp MINUS &kp ASTERISK &kp CARET &kp EQUAL
 				&kp N1 &kp N2 &kp N3 &kp N4 &kp N5 &kp N6 &kp N7 &kp N8 &kp N9 &kp N0

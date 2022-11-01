@@ -83,7 +83,7 @@ __devicehdl_DT_N_S_behaviors_S_behavior_reset[] = { DEVICE_HANDLE_SEP, DEVICE_HA
  * Direct Dependencies:
  *   - (/behaviors)
  * Supported:
- *   - /behaviors/ctrl_mod_tap_dance
+ *   - /behaviors/mod_alt_tap_dance
  *   - (/keymap/default_layer)
  *   - (/keymap/function_layer)
  *   - (/keymap/lowered_layer)
@@ -93,7 +93,7 @@ __devicehdl_DT_N_S_behaviors_S_behavior_reset[] = { DEVICE_HANDLE_SEP, DEVICE_HA
  *   - /macros/ring_a
  */
 const device_handle_t __aligned(2) __attribute__((__section__(".__device_handles_pass2")))
-__devicehdl_DT_N_S_behaviors_S_behavior_key_press[] = { DEVICE_HANDLE_SEP, DEVICE_HANDLE_SEP, 12, 16, 14, 13, DEVICE_HANDLE_ENDS };
+__devicehdl_DT_N_S_behaviors_S_behavior_key_press[] = { DEVICE_HANDLE_SEP, DEVICE_HANDLE_SEP, 12, 16, 13, 14, DEVICE_HANDLE_ENDS };
 
 /* 12 : /macros/ring_a:
  * Direct Dependencies:
@@ -143,7 +143,7 @@ __devicehdl_DT_N_S_macros_S_diaeresis_o[] = { 11, DEVICE_HANDLE_SEP, DEVICE_HAND
 const device_handle_t __aligned(2) __attribute__((__section__(".__device_handles_pass2")))
 __devicehdl_DT_N_S_behaviors_S_behavior_momentary_layer[] = { DEVICE_HANDLE_SEP, DEVICE_HANDLE_SEP, DEVICE_HANDLE_ENDS };
 
-/* 16 : /behaviors/ctrl_mod_tap_dance:
+/* 16 : /behaviors/mod_alt_tap_dance:
  * Direct Dependencies:
  *   - (/behaviors)
  *   - /behaviors/behavior_key_press
@@ -151,7 +151,7 @@ __devicehdl_DT_N_S_behaviors_S_behavior_momentary_layer[] = { DEVICE_HANDLE_SEP,
  *   - (/keymap/default_layer)
  */
 const device_handle_t __aligned(2) __attribute__((__section__(".__device_handles_pass2")))
-__devicehdl_DT_N_S_behaviors_S_ctrl_mod_tap_dance[] = { 11, DEVICE_HANDLE_SEP, DEVICE_HANDLE_SEP, DEVICE_HANDLE_ENDS };
+__devicehdl_DT_N_S_behaviors_S_mod_alt_tap_dance[] = { 11, DEVICE_HANDLE_SEP, DEVICE_HANDLE_SEP, DEVICE_HANDLE_ENDS };
 
 /* 17 : /behaviors/behavior_transparent:
  * Direct Dependencies:
@@ -168,7 +168,6 @@ __devicehdl_DT_N_S_behaviors_S_behavior_transparent[] = { DEVICE_HANDLE_SEP, DEV
  * Direct Dependencies:
  *   - (/behaviors)
  * Supported:
- *   - (/keymap/default_layer)
  *   - (/keymap/lowered_layer)
  *   - (/keymap/raised_layer)
  */
