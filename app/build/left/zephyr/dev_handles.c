@@ -16,7 +16,7 @@ __devicehdl_DT_N_S_soc_S_clock_40000000[] = { DEVICE_HANDLE_SEP, DEVICE_HANDLE_S
  *   - /kscan
  */
 const device_handle_t __aligned(2) __attribute__((__section__(".__device_handles_pass2")))
-__devicehdl_DT_N_S_soc_S_gpio_50000300[] = { DEVICE_HANDLE_SEP, DEVICE_HANDLE_SEP, 20, DEVICE_HANDLE_ENDS };
+__devicehdl_DT_N_S_soc_S_gpio_50000300[] = { DEVICE_HANDLE_SEP, DEVICE_HANDLE_SEP, 21, DEVICE_HANDLE_ENDS };
 
 /* 3 : /soc/gpio@50000000:
  * Direct Dependencies:
@@ -26,7 +26,7 @@ __devicehdl_DT_N_S_soc_S_gpio_50000300[] = { DEVICE_HANDLE_SEP, DEVICE_HANDLE_SE
  *   - (/leds/led_0)
  */
 const device_handle_t __aligned(2) __attribute__((__section__(".__device_handles_pass2")))
-__devicehdl_DT_N_S_soc_S_gpio_50000000[] = { DEVICE_HANDLE_SEP, DEVICE_HANDLE_SEP, 20, DEVICE_HANDLE_ENDS };
+__devicehdl_DT_N_S_soc_S_gpio_50000000[] = { DEVICE_HANDLE_SEP, DEVICE_HANDLE_SEP, 21, DEVICE_HANDLE_ENDS };
 
 /* 4 : /soc/random@4000d000:
  * Direct Dependencies:
@@ -93,7 +93,7 @@ __devicehdl_DT_N_S_behaviors_S_behavior_reset[] = { DEVICE_HANDLE_SEP, DEVICE_HA
  *   - /macros/ring_a
  */
 const device_handle_t __aligned(2) __attribute__((__section__(".__device_handles_pass2")))
-__devicehdl_DT_N_S_behaviors_S_behavior_key_press[] = { DEVICE_HANDLE_SEP, DEVICE_HANDLE_SEP, 12, 16, 13, 14, DEVICE_HANDLE_ENDS };
+__devicehdl_DT_N_S_behaviors_S_behavior_key_press[] = { DEVICE_HANDLE_SEP, DEVICE_HANDLE_SEP, 13, 16, 14, 12, DEVICE_HANDLE_ENDS };
 
 /* 12 : /macros/ring_a:
  * Direct Dependencies:
@@ -174,14 +174,23 @@ __devicehdl_DT_N_S_behaviors_S_behavior_transparent[] = { DEVICE_HANDLE_SEP, DEV
 const device_handle_t __aligned(2) __attribute__((__section__(".__device_handles_pass2")))
 __devicehdl_DT_N_S_behaviors_S_behavior_none[] = { DEVICE_HANDLE_SEP, DEVICE_HANDLE_SEP, DEVICE_HANDLE_ENDS };
 
-/* 19 : /behaviors/behavior_ext_power:
+/* 19 : /behaviors/behavior_bluetooth:
+ * Direct Dependencies:
+ *   - (/behaviors)
+ * Supported:
+ *   - (/keymap/lowered_layer)
+ */
+const device_handle_t __aligned(2) __attribute__((__section__(".__device_handles_pass2")))
+__devicehdl_DT_N_S_behaviors_S_behavior_bluetooth[] = { DEVICE_HANDLE_SEP, DEVICE_HANDLE_SEP, DEVICE_HANDLE_ENDS };
+
+/* 20 : /behaviors/behavior_ext_power:
  * Direct Dependencies:
  *   - (/behaviors)
  */
 const device_handle_t __aligned(2) __attribute__((__section__(".__device_handles_pass2")))
 __devicehdl_DT_N_S_behaviors_S_behavior_ext_power[] = { DEVICE_HANDLE_SEP, DEVICE_HANDLE_SEP, DEVICE_HANDLE_ENDS };
 
-/* 20 : /kscan:
+/* 21 : /kscan:
  * Direct Dependencies:
  *   - (/)
  *   - /soc/gpio@50000000

@@ -105,7 +105,7 @@
 			bindings = <
 				&kp EXCLAMATION &kp AT_SIGN &kp HASH &kp DOLLAR &kp AMPERSAND &kp SEMICOLON &kp COMMA &kp PERIOD &kp COLON &none
 				&kp TAB &kp BSPC &kp ESC &kp RET &none &kp LEFT_ARROW &kp DOWN_ARROW &kp UP_ARROW &kp RIGHT_ARROW &none
-				&kp QUESTION &kp TILDE &kp GRAVE &kp SINGLE_QUOTE &kp DOUBLE_QUOTES &none &none &none &none &none
+				&kp QUESTION &kp TILDE &kp GRAVE &kp SINGLE_QUOTE &kp DOUBLE_QUOTES &none &none &none &none &bt BT_CLR
 				&trans &trans &trans &trans &trans &trans
 			>;
 		};

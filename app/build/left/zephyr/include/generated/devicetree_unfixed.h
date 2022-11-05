@@ -47,63 +47,64 @@
  *   36  /keymap/default_layer
  *   37  /behaviors/behavior_transparent
  *   38  /keymap/function_layer
- *   39  /behaviors/behavior_none
- *   40  /keymap/lowered_layer
- *   41  /keymap/raised_layer
- *   42  /leds
- *   43  /leds/led_0
- *   44  /soc/adc@40007000
- *   45  /soc/clock@40000000
- *   46  /soc/ecb@4000e000
- *   47  /soc/egu@40014000
- *   48  /soc/egu@40015000
- *   49  /soc/egu@40016000
- *   50  /soc/egu@40017000
- *   51  /soc/egu@40018000
- *   52  /soc/egu@40019000
- *   53  /soc/ficr@10000000
- *   54  /soc/gpiote@40006000
- *   55  /soc/i2c@40003000
- *   56  /soc/i2c@40004000
- *   57  /soc/i2s@40025000
- *   58  /soc/memory@20000000
- *   59  /soc/pdm@4001d000
- *   60  /soc/pwm@4001c000
- *   61  /soc/pwm@40021000
- *   62  /soc/pwm@40022000
- *   63  /soc/pwm@4002d000
- *   64  /soc/qdec@40012000
- *   65  /soc/qspi@40029000
- *   66  /soc/radio@40001000
- *   67  /soc/random@4000d000
- *   68  /soc/rtc@4000b000
- *   69  /soc/rtc@40011000
- *   70  /soc/rtc@40024000
- *   71  /soc/spi@40003000
- *   72  /soc/spi@40004000
- *   73  /soc/spi@40023000
- *   74  /soc/spi@4002f000
- *   75  /soc/temp@4000c000
- *   76  /soc/timer@40008000
- *   77  /soc/timer@40009000
- *   78  /soc/timer@4001a000
- *   79  /soc/timer@4001b000
- *   80  /soc/timer@e000e010
- *   81  /soc/uart@40002000
- *   82  /soc/uart@40028000
- *   83  /soc/uicr@10001000
- *   84  /soc/watchdog@40010000
- *   85  /soc/crypto@5002a000
- *   86  /soc/crypto@5002a000/crypto@5002b000
- *   87  /soc/flash-controller@4001e000
- *   88  /soc/flash-controller@4001e000/flash@0
- *   89  /soc/flash-controller@4001e000/flash@0/partitions
- *   90  /soc/flash-controller@4001e000/flash@0/partitions/partition@0
- *   91  /soc/flash-controller@4001e000/flash@0/partitions/partition@26000
- *   92  /soc/flash-controller@4001e000/flash@0/partitions/partition@ec000
- *   93  /soc/flash-controller@4001e000/flash@0/partitions/partition@f4000
- *   94  /soc/usbd@40027000
- *   95  /soc/usbd@40027000/cdc_acm_uart
+ *   39  /behaviors/behavior_bluetooth
+ *   40  /behaviors/behavior_none
+ *   41  /keymap/lowered_layer
+ *   42  /keymap/raised_layer
+ *   43  /leds
+ *   44  /leds/led_0
+ *   45  /soc/adc@40007000
+ *   46  /soc/clock@40000000
+ *   47  /soc/ecb@4000e000
+ *   48  /soc/egu@40014000
+ *   49  /soc/egu@40015000
+ *   50  /soc/egu@40016000
+ *   51  /soc/egu@40017000
+ *   52  /soc/egu@40018000
+ *   53  /soc/egu@40019000
+ *   54  /soc/ficr@10000000
+ *   55  /soc/gpiote@40006000
+ *   56  /soc/i2c@40003000
+ *   57  /soc/i2c@40004000
+ *   58  /soc/i2s@40025000
+ *   59  /soc/memory@20000000
+ *   60  /soc/pdm@4001d000
+ *   61  /soc/pwm@4001c000
+ *   62  /soc/pwm@40021000
+ *   63  /soc/pwm@40022000
+ *   64  /soc/pwm@4002d000
+ *   65  /soc/qdec@40012000
+ *   66  /soc/qspi@40029000
+ *   67  /soc/radio@40001000
+ *   68  /soc/random@4000d000
+ *   69  /soc/rtc@4000b000
+ *   70  /soc/rtc@40011000
+ *   71  /soc/rtc@40024000
+ *   72  /soc/spi@40003000
+ *   73  /soc/spi@40004000
+ *   74  /soc/spi@40023000
+ *   75  /soc/spi@4002f000
+ *   76  /soc/temp@4000c000
+ *   77  /soc/timer@40008000
+ *   78  /soc/timer@40009000
+ *   79  /soc/timer@4001a000
+ *   80  /soc/timer@4001b000
+ *   81  /soc/timer@e000e010
+ *   82  /soc/uart@40002000
+ *   83  /soc/uart@40028000
+ *   84  /soc/uicr@10001000
+ *   85  /soc/watchdog@40010000
+ *   86  /soc/crypto@5002a000
+ *   87  /soc/crypto@5002a000/crypto@5002b000
+ *   88  /soc/flash-controller@4001e000
+ *   89  /soc/flash-controller@4001e000/flash@0
+ *   90  /soc/flash-controller@4001e000/flash@0/partitions
+ *   91  /soc/flash-controller@4001e000/flash@0/partitions/partition@0
+ *   92  /soc/flash-controller@4001e000/flash@0/partitions/partition@26000
+ *   93  /soc/flash-controller@4001e000/flash@0/partitions/partition@ec000
+ *   94  /soc/flash-controller@4001e000/flash@0/partitions/partition@f4000
+ *   95  /soc/usbd@40027000
+ *   96  /soc/usbd@40027000/cdc_acm_uart
  *
  * Definitions derived from these nodes in dependency order are next,
  * followed by /chosen nodes.
@@ -146,7 +147,7 @@
 	23, /* /cpus */ \
 	25, /* /keymap */ \
 	29, /* /macros */ \
-	42, /* /leds */
+	43, /* /leds */
 
 /* Existence and alternate IDs: */
 #define DT_N_EXISTS 1
@@ -500,50 +501,50 @@
 	6, /* /soc/gpio@50000300 */ \
 	9, /* /soc/interrupt-controller@e000e100 */ \
 	10, /* /soc/timer@4000a000 */ \
-	44, /* /soc/adc@40007000 */ \
-	45, /* /soc/clock@40000000 */ \
-	46, /* /soc/ecb@4000e000 */ \
-	47, /* /soc/egu@40014000 */ \
-	48, /* /soc/egu@40015000 */ \
-	49, /* /soc/egu@40016000 */ \
-	50, /* /soc/egu@40017000 */ \
-	51, /* /soc/egu@40018000 */ \
-	52, /* /soc/egu@40019000 */ \
-	53, /* /soc/ficr@10000000 */ \
-	54, /* /soc/gpiote@40006000 */ \
-	55, /* /soc/i2c@40003000 */ \
-	56, /* /soc/i2c@40004000 */ \
-	57, /* /soc/i2s@40025000 */ \
-	58, /* /soc/memory@20000000 */ \
-	59, /* /soc/pdm@4001d000 */ \
-	60, /* /soc/pwm@4001c000 */ \
-	61, /* /soc/pwm@40021000 */ \
-	62, /* /soc/pwm@40022000 */ \
-	63, /* /soc/pwm@4002d000 */ \
-	64, /* /soc/qdec@40012000 */ \
-	65, /* /soc/qspi@40029000 */ \
-	66, /* /soc/radio@40001000 */ \
-	67, /* /soc/random@4000d000 */ \
-	68, /* /soc/rtc@4000b000 */ \
-	69, /* /soc/rtc@40011000 */ \
-	70, /* /soc/rtc@40024000 */ \
-	71, /* /soc/spi@40003000 */ \
-	72, /* /soc/spi@40004000 */ \
-	73, /* /soc/spi@40023000 */ \
-	74, /* /soc/spi@4002f000 */ \
-	75, /* /soc/temp@4000c000 */ \
-	76, /* /soc/timer@40008000 */ \
-	77, /* /soc/timer@40009000 */ \
-	78, /* /soc/timer@4001a000 */ \
-	79, /* /soc/timer@4001b000 */ \
-	80, /* /soc/timer@e000e010 */ \
-	81, /* /soc/uart@40002000 */ \
-	82, /* /soc/uart@40028000 */ \
-	83, /* /soc/uicr@10001000 */ \
-	84, /* /soc/watchdog@40010000 */ \
-	85, /* /soc/crypto@5002a000 */ \
-	87, /* /soc/flash-controller@4001e000 */ \
-	94, /* /soc/usbd@40027000 */
+	45, /* /soc/adc@40007000 */ \
+	46, /* /soc/clock@40000000 */ \
+	47, /* /soc/ecb@4000e000 */ \
+	48, /* /soc/egu@40014000 */ \
+	49, /* /soc/egu@40015000 */ \
+	50, /* /soc/egu@40016000 */ \
+	51, /* /soc/egu@40017000 */ \
+	52, /* /soc/egu@40018000 */ \
+	53, /* /soc/egu@40019000 */ \
+	54, /* /soc/ficr@10000000 */ \
+	55, /* /soc/gpiote@40006000 */ \
+	56, /* /soc/i2c@40003000 */ \
+	57, /* /soc/i2c@40004000 */ \
+	58, /* /soc/i2s@40025000 */ \
+	59, /* /soc/memory@20000000 */ \
+	60, /* /soc/pdm@4001d000 */ \
+	61, /* /soc/pwm@4001c000 */ \
+	62, /* /soc/pwm@40021000 */ \
+	63, /* /soc/pwm@40022000 */ \
+	64, /* /soc/pwm@4002d000 */ \
+	65, /* /soc/qdec@40012000 */ \
+	66, /* /soc/qspi@40029000 */ \
+	67, /* /soc/radio@40001000 */ \
+	68, /* /soc/random@4000d000 */ \
+	69, /* /soc/rtc@4000b000 */ \
+	70, /* /soc/rtc@40011000 */ \
+	71, /* /soc/rtc@40024000 */ \
+	72, /* /soc/spi@40003000 */ \
+	73, /* /soc/spi@40004000 */ \
+	74, /* /soc/spi@40023000 */ \
+	75, /* /soc/spi@4002f000 */ \
+	76, /* /soc/temp@4000c000 */ \
+	77, /* /soc/timer@40008000 */ \
+	78, /* /soc/timer@40009000 */ \
+	79, /* /soc/timer@4001a000 */ \
+	80, /* /soc/timer@4001b000 */ \
+	81, /* /soc/timer@e000e010 */ \
+	82, /* /soc/uart@40002000 */ \
+	83, /* /soc/uart@40028000 */ \
+	84, /* /soc/uicr@10001000 */ \
+	85, /* /soc/watchdog@40010000 */ \
+	86, /* /soc/crypto@5002a000 */ \
+	88, /* /soc/flash-controller@4001e000 */ \
+	95, /* /soc/usbd@40027000 */
 
 /* Existence and alternate IDs: */
 #define DT_N_S_soc_EXISTS 1
@@ -622,7 +623,7 @@
 /* Ordinals for what depends directly on this node: */
 #define DT_N_S_soc_S_gpio_50000000_SUPPORTS_ORDS \
 	7, /* /kscan */ \
-	43, /* /leds/led_0 */
+	44, /* /leds/led_0 */
 
 /* Existence and alternate IDs: */
 #define DT_N_S_soc_S_gpio_50000000_EXISTS 1
@@ -1167,45 +1168,45 @@
 /* Ordinals for what depends directly on this node: */
 #define DT_N_S_soc_S_interrupt_controller_e000e100_SUPPORTS_ORDS \
 	10, /* /soc/timer@4000a000 */ \
-	44, /* /soc/adc@40007000 */ \
-	45, /* /soc/clock@40000000 */ \
-	46, /* /soc/ecb@4000e000 */ \
-	47, /* /soc/egu@40014000 */ \
-	48, /* /soc/egu@40015000 */ \
-	49, /* /soc/egu@40016000 */ \
-	50, /* /soc/egu@40017000 */ \
-	51, /* /soc/egu@40018000 */ \
-	52, /* /soc/egu@40019000 */ \
-	54, /* /soc/gpiote@40006000 */ \
-	55, /* /soc/i2c@40003000 */ \
-	56, /* /soc/i2c@40004000 */ \
-	57, /* /soc/i2s@40025000 */ \
-	59, /* /soc/pdm@4001d000 */ \
-	60, /* /soc/pwm@4001c000 */ \
-	61, /* /soc/pwm@40021000 */ \
-	62, /* /soc/pwm@40022000 */ \
-	63, /* /soc/pwm@4002d000 */ \
-	64, /* /soc/qdec@40012000 */ \
-	65, /* /soc/qspi@40029000 */ \
-	66, /* /soc/radio@40001000 */ \
-	67, /* /soc/random@4000d000 */ \
-	68, /* /soc/rtc@4000b000 */ \
-	69, /* /soc/rtc@40011000 */ \
-	70, /* /soc/rtc@40024000 */ \
-	71, /* /soc/spi@40003000 */ \
-	72, /* /soc/spi@40004000 */ \
-	73, /* /soc/spi@40023000 */ \
-	74, /* /soc/spi@4002f000 */ \
-	75, /* /soc/temp@4000c000 */ \
-	76, /* /soc/timer@40008000 */ \
-	77, /* /soc/timer@40009000 */ \
-	78, /* /soc/timer@4001a000 */ \
-	79, /* /soc/timer@4001b000 */ \
-	81, /* /soc/uart@40002000 */ \
-	82, /* /soc/uart@40028000 */ \
-	84, /* /soc/watchdog@40010000 */ \
-	86, /* /soc/crypto@5002a000/crypto@5002b000 */ \
-	94, /* /soc/usbd@40027000 */
+	45, /* /soc/adc@40007000 */ \
+	46, /* /soc/clock@40000000 */ \
+	47, /* /soc/ecb@4000e000 */ \
+	48, /* /soc/egu@40014000 */ \
+	49, /* /soc/egu@40015000 */ \
+	50, /* /soc/egu@40016000 */ \
+	51, /* /soc/egu@40017000 */ \
+	52, /* /soc/egu@40018000 */ \
+	53, /* /soc/egu@40019000 */ \
+	55, /* /soc/gpiote@40006000 */ \
+	56, /* /soc/i2c@40003000 */ \
+	57, /* /soc/i2c@40004000 */ \
+	58, /* /soc/i2s@40025000 */ \
+	60, /* /soc/pdm@4001d000 */ \
+	61, /* /soc/pwm@4001c000 */ \
+	62, /* /soc/pwm@40021000 */ \
+	63, /* /soc/pwm@40022000 */ \
+	64, /* /soc/pwm@4002d000 */ \
+	65, /* /soc/qdec@40012000 */ \
+	66, /* /soc/qspi@40029000 */ \
+	67, /* /soc/radio@40001000 */ \
+	68, /* /soc/random@4000d000 */ \
+	69, /* /soc/rtc@4000b000 */ \
+	70, /* /soc/rtc@40011000 */ \
+	71, /* /soc/rtc@40024000 */ \
+	72, /* /soc/spi@40003000 */ \
+	73, /* /soc/spi@40004000 */ \
+	74, /* /soc/spi@40023000 */ \
+	75, /* /soc/spi@4002f000 */ \
+	76, /* /soc/temp@4000c000 */ \
+	77, /* /soc/timer@40008000 */ \
+	78, /* /soc/timer@40009000 */ \
+	79, /* /soc/timer@4001a000 */ \
+	80, /* /soc/timer@4001b000 */ \
+	82, /* /soc/uart@40002000 */ \
+	83, /* /soc/uart@40028000 */ \
+	85, /* /soc/watchdog@40010000 */ \
+	87, /* /soc/crypto@5002a000/crypto@5002b000 */ \
+	95, /* /soc/usbd@40027000 */
 
 /* Existence and alternate IDs: */
 #define DT_N_S_soc_S_interrupt_controller_e000e100_EXISTS 1
@@ -1578,10 +1579,10 @@
 
 /* Node parent (/) identifier: */
 #define DT_N_S_behaviors_PARENT DT_N
-#define DT_N_S_behaviors_FOREACH_CHILD(fn) fn(DT_N_S_behaviors_S_behavior_key_press) fn(DT_N_S_behaviors_S_behavior_transparent) fn(DT_N_S_behaviors_S_behavior_none) fn(DT_N_S_behaviors_S_behavior_momentary_layer) fn(DT_N_S_behaviors_S_behavior_reset) fn(DT_N_S_behaviors_S_behavior_reset_dfu) fn(DT_N_S_behaviors_S_behavior_rgb_underglow) fn(DT_N_S_behaviors_S_behavior_ext_power) fn(DT_N_S_behaviors_S_macro_control_mode_tap) fn(DT_N_S_behaviors_S_macro_control_mode_press) fn(DT_N_S_behaviors_S_macro_control_mode_release) fn(DT_N_S_behaviors_S_macro_control_tap_time) fn(DT_N_S_behaviors_S_macro_control_wait_time) fn(DT_N_S_behaviors_S_macro_pause_for_release) fn(DT_N_S_behaviors_S_mod_alt_tap_dance)
-#define DT_N_S_behaviors_FOREACH_CHILD_VARGS(fn, ...) fn(DT_N_S_behaviors_S_behavior_key_press, __VA_ARGS__) fn(DT_N_S_behaviors_S_behavior_transparent, __VA_ARGS__) fn(DT_N_S_behaviors_S_behavior_none, __VA_ARGS__) fn(DT_N_S_behaviors_S_behavior_momentary_layer, __VA_ARGS__) fn(DT_N_S_behaviors_S_behavior_reset, __VA_ARGS__) fn(DT_N_S_behaviors_S_behavior_reset_dfu, __VA_ARGS__) fn(DT_N_S_behaviors_S_behavior_rgb_underglow, __VA_ARGS__) fn(DT_N_S_behaviors_S_behavior_ext_power, __VA_ARGS__) fn(DT_N_S_behaviors_S_macro_control_mode_tap, __VA_ARGS__) fn(DT_N_S_behaviors_S_macro_control_mode_press, __VA_ARGS__) fn(DT_N_S_behaviors_S_macro_control_mode_release, __VA_ARGS__) fn(DT_N_S_behaviors_S_macro_control_tap_time, __VA_ARGS__) fn(DT_N_S_behaviors_S_macro_control_wait_time, __VA_ARGS__) fn(DT_N_S_behaviors_S_macro_pause_for_release, __VA_ARGS__) fn(DT_N_S_behaviors_S_mod_alt_tap_dance, __VA_ARGS__)
-#define DT_N_S_behaviors_FOREACH_CHILD_STATUS_OKAY(fn) fn(DT_N_S_behaviors_S_behavior_key_press) fn(DT_N_S_behaviors_S_behavior_transparent) fn(DT_N_S_behaviors_S_behavior_none) fn(DT_N_S_behaviors_S_behavior_momentary_layer) fn(DT_N_S_behaviors_S_behavior_reset) fn(DT_N_S_behaviors_S_behavior_reset_dfu) fn(DT_N_S_behaviors_S_behavior_rgb_underglow) fn(DT_N_S_behaviors_S_behavior_ext_power) fn(DT_N_S_behaviors_S_macro_control_mode_tap) fn(DT_N_S_behaviors_S_macro_control_mode_press) fn(DT_N_S_behaviors_S_macro_control_mode_release) fn(DT_N_S_behaviors_S_macro_control_tap_time) fn(DT_N_S_behaviors_S_macro_control_wait_time) fn(DT_N_S_behaviors_S_macro_pause_for_release) fn(DT_N_S_behaviors_S_mod_alt_tap_dance) 
-#define DT_N_S_behaviors_FOREACH_CHILD_STATUS_OKAY_VARGS(fn, ...) fn(DT_N_S_behaviors_S_behavior_key_press, __VA_ARGS__) fn(DT_N_S_behaviors_S_behavior_transparent, __VA_ARGS__) fn(DT_N_S_behaviors_S_behavior_none, __VA_ARGS__) fn(DT_N_S_behaviors_S_behavior_momentary_layer, __VA_ARGS__) fn(DT_N_S_behaviors_S_behavior_reset, __VA_ARGS__) fn(DT_N_S_behaviors_S_behavior_reset_dfu, __VA_ARGS__) fn(DT_N_S_behaviors_S_behavior_rgb_underglow, __VA_ARGS__) fn(DT_N_S_behaviors_S_behavior_ext_power, __VA_ARGS__) fn(DT_N_S_behaviors_S_macro_control_mode_tap, __VA_ARGS__) fn(DT_N_S_behaviors_S_macro_control_mode_press, __VA_ARGS__) fn(DT_N_S_behaviors_S_macro_control_mode_release, __VA_ARGS__) fn(DT_N_S_behaviors_S_macro_control_tap_time, __VA_ARGS__) fn(DT_N_S_behaviors_S_macro_control_wait_time, __VA_ARGS__) fn(DT_N_S_behaviors_S_macro_pause_for_release, __VA_ARGS__) fn(DT_N_S_behaviors_S_mod_alt_tap_dance, __VA_ARGS__) 
+#define DT_N_S_behaviors_FOREACH_CHILD(fn) fn(DT_N_S_behaviors_S_behavior_key_press) fn(DT_N_S_behaviors_S_behavior_transparent) fn(DT_N_S_behaviors_S_behavior_none) fn(DT_N_S_behaviors_S_behavior_momentary_layer) fn(DT_N_S_behaviors_S_behavior_reset) fn(DT_N_S_behaviors_S_behavior_reset_dfu) fn(DT_N_S_behaviors_S_behavior_rgb_underglow) fn(DT_N_S_behaviors_S_behavior_bluetooth) fn(DT_N_S_behaviors_S_behavior_ext_power) fn(DT_N_S_behaviors_S_macro_control_mode_tap) fn(DT_N_S_behaviors_S_macro_control_mode_press) fn(DT_N_S_behaviors_S_macro_control_mode_release) fn(DT_N_S_behaviors_S_macro_control_tap_time) fn(DT_N_S_behaviors_S_macro_control_wait_time) fn(DT_N_S_behaviors_S_macro_pause_for_release) fn(DT_N_S_behaviors_S_mod_alt_tap_dance)
+#define DT_N_S_behaviors_FOREACH_CHILD_VARGS(fn, ...) fn(DT_N_S_behaviors_S_behavior_key_press, __VA_ARGS__) fn(DT_N_S_behaviors_S_behavior_transparent, __VA_ARGS__) fn(DT_N_S_behaviors_S_behavior_none, __VA_ARGS__) fn(DT_N_S_behaviors_S_behavior_momentary_layer, __VA_ARGS__) fn(DT_N_S_behaviors_S_behavior_reset, __VA_ARGS__) fn(DT_N_S_behaviors_S_behavior_reset_dfu, __VA_ARGS__) fn(DT_N_S_behaviors_S_behavior_rgb_underglow, __VA_ARGS__) fn(DT_N_S_behaviors_S_behavior_bluetooth, __VA_ARGS__) fn(DT_N_S_behaviors_S_behavior_ext_power, __VA_ARGS__) fn(DT_N_S_behaviors_S_macro_control_mode_tap, __VA_ARGS__) fn(DT_N_S_behaviors_S_macro_control_mode_press, __VA_ARGS__) fn(DT_N_S_behaviors_S_macro_control_mode_release, __VA_ARGS__) fn(DT_N_S_behaviors_S_macro_control_tap_time, __VA_ARGS__) fn(DT_N_S_behaviors_S_macro_control_wait_time, __VA_ARGS__) fn(DT_N_S_behaviors_S_macro_pause_for_release, __VA_ARGS__) fn(DT_N_S_behaviors_S_mod_alt_tap_dance, __VA_ARGS__)
+#define DT_N_S_behaviors_FOREACH_CHILD_STATUS_OKAY(fn) fn(DT_N_S_behaviors_S_behavior_key_press) fn(DT_N_S_behaviors_S_behavior_transparent) fn(DT_N_S_behaviors_S_behavior_none) fn(DT_N_S_behaviors_S_behavior_momentary_layer) fn(DT_N_S_behaviors_S_behavior_reset) fn(DT_N_S_behaviors_S_behavior_reset_dfu) fn(DT_N_S_behaviors_S_behavior_rgb_underglow) fn(DT_N_S_behaviors_S_behavior_bluetooth) fn(DT_N_S_behaviors_S_behavior_ext_power) fn(DT_N_S_behaviors_S_macro_control_mode_tap) fn(DT_N_S_behaviors_S_macro_control_mode_press) fn(DT_N_S_behaviors_S_macro_control_mode_release) fn(DT_N_S_behaviors_S_macro_control_tap_time) fn(DT_N_S_behaviors_S_macro_control_wait_time) fn(DT_N_S_behaviors_S_macro_pause_for_release) fn(DT_N_S_behaviors_S_mod_alt_tap_dance) 
+#define DT_N_S_behaviors_FOREACH_CHILD_STATUS_OKAY_VARGS(fn, ...) fn(DT_N_S_behaviors_S_behavior_key_press, __VA_ARGS__) fn(DT_N_S_behaviors_S_behavior_transparent, __VA_ARGS__) fn(DT_N_S_behaviors_S_behavior_none, __VA_ARGS__) fn(DT_N_S_behaviors_S_behavior_momentary_layer, __VA_ARGS__) fn(DT_N_S_behaviors_S_behavior_reset, __VA_ARGS__) fn(DT_N_S_behaviors_S_behavior_reset_dfu, __VA_ARGS__) fn(DT_N_S_behaviors_S_behavior_rgb_underglow, __VA_ARGS__) fn(DT_N_S_behaviors_S_behavior_bluetooth, __VA_ARGS__) fn(DT_N_S_behaviors_S_behavior_ext_power, __VA_ARGS__) fn(DT_N_S_behaviors_S_macro_control_mode_tap, __VA_ARGS__) fn(DT_N_S_behaviors_S_macro_control_mode_press, __VA_ARGS__) fn(DT_N_S_behaviors_S_macro_control_mode_release, __VA_ARGS__) fn(DT_N_S_behaviors_S_macro_control_tap_time, __VA_ARGS__) fn(DT_N_S_behaviors_S_macro_control_wait_time, __VA_ARGS__) fn(DT_N_S_behaviors_S_macro_pause_for_release, __VA_ARGS__) fn(DT_N_S_behaviors_S_mod_alt_tap_dance, __VA_ARGS__) 
 
 /* Node's dependency ordinal: */
 #define DT_N_S_behaviors_ORD 13
@@ -1606,7 +1607,8 @@
 	31, /* /behaviors/macro_control_mode_release */ \
 	32, /* /behaviors/macro_control_mode_tap */ \
 	37, /* /behaviors/behavior_transparent */ \
-	39, /* /behaviors/behavior_none */
+	39, /* /behaviors/behavior_bluetooth */ \
+	40, /* /behaviors/behavior_none */
 
 /* Existence and alternate IDs: */
 #define DT_N_S_behaviors_EXISTS 1
@@ -2426,8 +2428,8 @@
 #define DT_N_S_keymap_SUPPORTS_ORDS \
 	36, /* /keymap/default_layer */ \
 	38, /* /keymap/function_layer */ \
-	40, /* /keymap/lowered_layer */ \
-	41, /* /keymap/raised_layer */
+	41, /* /keymap/lowered_layer */ \
+	42, /* /keymap/raised_layer */
 
 /* Existence and alternate IDs: */
 #define DT_N_S_keymap_EXISTS 1
@@ -2493,8 +2495,8 @@
 	35, /* /macros/ring_a */ \
 	36, /* /keymap/default_layer */ \
 	38, /* /keymap/function_layer */ \
-	40, /* /keymap/lowered_layer */ \
-	41, /* /keymap/raised_layer */
+	41, /* /keymap/lowered_layer */ \
+	42, /* /keymap/raised_layer */
 
 /* Existence and alternate IDs: */
 #define DT_N_S_behaviors_S_behavior_key_press_EXISTS 1
@@ -3779,8 +3781,8 @@
 /* Ordinals for what depends directly on this node: */
 #define DT_N_S_behaviors_S_behavior_transparent_SUPPORTS_ORDS \
 	38, /* /keymap/function_layer */ \
-	40, /* /keymap/lowered_layer */ \
-	41, /* /keymap/raised_layer */
+	41, /* /keymap/lowered_layer */ \
+	42, /* /keymap/raised_layer */
 
 /* Existence and alternate IDs: */
 #define DT_N_S_behaviors_S_behavior_transparent_EXISTS 1
@@ -4070,6 +4072,82 @@
 #define DT_N_S_keymap_S_function_layer_P_bindings_EXISTS 1
 
 /*
+ * Devicetree node: /behaviors/behavior_bluetooth
+ *
+ * Node identifier: DT_N_S_behaviors_S_behavior_bluetooth
+ *
+ * Binding (compatible = zmk,behavior-bluetooth):
+ *   /home/gibbz/projects/under-construction/borne-keyboard/firmware/zmk/app/dts/bindings/behaviors/zmk,behavior-bluetooth.yaml
+ *
+ * (Descriptions have moved to the Devicetree Bindings Index
+ * in the documentation.)
+ */
+
+/* Node's full path: */
+#define DT_N_S_behaviors_S_behavior_bluetooth_PATH "/behaviors/behavior_bluetooth"
+
+/* Node's name with unit-address: */
+#define DT_N_S_behaviors_S_behavior_bluetooth_FULL_NAME "behavior_bluetooth"
+
+/* Node parent (/behaviors) identifier: */
+#define DT_N_S_behaviors_S_behavior_bluetooth_PARENT DT_N_S_behaviors
+#define DT_N_S_behaviors_S_behavior_bluetooth_FOREACH_CHILD(fn) 
+#define DT_N_S_behaviors_S_behavior_bluetooth_FOREACH_CHILD_VARGS(fn, ...) 
+#define DT_N_S_behaviors_S_behavior_bluetooth_FOREACH_CHILD_STATUS_OKAY(fn) 
+#define DT_N_S_behaviors_S_behavior_bluetooth_FOREACH_CHILD_STATUS_OKAY_VARGS(fn, ...) 
+
+/* Node's dependency ordinal: */
+#define DT_N_S_behaviors_S_behavior_bluetooth_ORD 39
+
+/* Ordinals for what this node depends on directly: */
+#define DT_N_S_behaviors_S_behavior_bluetooth_REQUIRES_ORDS \
+	13, /* /behaviors */
+
+/* Ordinals for what depends directly on this node: */
+#define DT_N_S_behaviors_S_behavior_bluetooth_SUPPORTS_ORDS \
+	41, /* /keymap/lowered_layer */
+
+/* Existence and alternate IDs: */
+#define DT_N_S_behaviors_S_behavior_bluetooth_EXISTS 1
+#define DT_N_INST_0_zmk_behavior_bluetooth DT_N_S_behaviors_S_behavior_bluetooth
+#define DT_N_NODELABEL_bt                  DT_N_S_behaviors_S_behavior_bluetooth
+
+/* Macros for properties that are special in the specification: */
+#define DT_N_S_behaviors_S_behavior_bluetooth_REG_NUM 0
+#define DT_N_S_behaviors_S_behavior_bluetooth_RANGES_NUM 0
+#define DT_N_S_behaviors_S_behavior_bluetooth_FOREACH_RANGE(fn) 
+#define DT_N_S_behaviors_S_behavior_bluetooth_IRQ_NUM 0
+#define DT_N_S_behaviors_S_behavior_bluetooth_COMPAT_MATCHES_zmk_behavior_bluetooth 1
+#define DT_N_S_behaviors_S_behavior_bluetooth_STATUS_okay 1
+
+/* Pin control (pinctrl-<i>, pinctrl-names) properties: */
+#define DT_N_S_behaviors_S_behavior_bluetooth_PINCTRL_NUM 0
+
+/* Generic property macros: */
+#define DT_N_S_behaviors_S_behavior_bluetooth_P_label "BLUETOOTH"
+#define DT_N_S_behaviors_S_behavior_bluetooth_P_label_STRING_TOKEN BLUETOOTH
+#define DT_N_S_behaviors_S_behavior_bluetooth_P_label_STRING_UPPER_TOKEN BLUETOOTH
+#define DT_N_S_behaviors_S_behavior_bluetooth_P_label_FOREACH_PROP_ELEM(fn) fn(DT_N_S_behaviors_S_behavior_bluetooth, label, 0) \
+	fn(DT_N_S_behaviors_S_behavior_bluetooth, label, 1) \
+	fn(DT_N_S_behaviors_S_behavior_bluetooth, label, 2) \
+	fn(DT_N_S_behaviors_S_behavior_bluetooth, label, 3) \
+	fn(DT_N_S_behaviors_S_behavior_bluetooth, label, 4) \
+	fn(DT_N_S_behaviors_S_behavior_bluetooth, label, 5) \
+	fn(DT_N_S_behaviors_S_behavior_bluetooth, label, 6) \
+	fn(DT_N_S_behaviors_S_behavior_bluetooth, label, 7) \
+	fn(DT_N_S_behaviors_S_behavior_bluetooth, label, 8)
+#define DT_N_S_behaviors_S_behavior_bluetooth_P_label_FOREACH_PROP_ELEM_VARGS(fn, ...) fn(DT_N_S_behaviors_S_behavior_bluetooth, label, 0, __VA_ARGS__) \
+	fn(DT_N_S_behaviors_S_behavior_bluetooth, label, 1, __VA_ARGS__) \
+	fn(DT_N_S_behaviors_S_behavior_bluetooth, label, 2, __VA_ARGS__) \
+	fn(DT_N_S_behaviors_S_behavior_bluetooth, label, 3, __VA_ARGS__) \
+	fn(DT_N_S_behaviors_S_behavior_bluetooth, label, 4, __VA_ARGS__) \
+	fn(DT_N_S_behaviors_S_behavior_bluetooth, label, 5, __VA_ARGS__) \
+	fn(DT_N_S_behaviors_S_behavior_bluetooth, label, 6, __VA_ARGS__) \
+	fn(DT_N_S_behaviors_S_behavior_bluetooth, label, 7, __VA_ARGS__) \
+	fn(DT_N_S_behaviors_S_behavior_bluetooth, label, 8, __VA_ARGS__)
+#define DT_N_S_behaviors_S_behavior_bluetooth_P_label_EXISTS 1
+
+/*
  * Devicetree node: /behaviors/behavior_none
  *
  * Node identifier: DT_N_S_behaviors_S_behavior_none
@@ -4095,7 +4173,7 @@
 #define DT_N_S_behaviors_S_behavior_none_FOREACH_CHILD_STATUS_OKAY_VARGS(fn, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_behaviors_S_behavior_none_ORD 39
+#define DT_N_S_behaviors_S_behavior_none_ORD 40
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_behaviors_S_behavior_none_REQUIRES_ORDS \
@@ -4103,8 +4181,8 @@
 
 /* Ordinals for what depends directly on this node: */
 #define DT_N_S_behaviors_S_behavior_none_SUPPORTS_ORDS \
-	40, /* /keymap/lowered_layer */ \
-	41, /* /keymap/raised_layer */
+	41, /* /keymap/lowered_layer */ \
+	42, /* /keymap/raised_layer */
 
 /* Existence and alternate IDs: */
 #define DT_N_S_behaviors_S_behavior_none_EXISTS 1
@@ -4159,14 +4237,15 @@
 #define DT_N_S_keymap_S_lowered_layer_FOREACH_CHILD_STATUS_OKAY_VARGS(fn, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_keymap_S_lowered_layer_ORD 40
+#define DT_N_S_keymap_S_lowered_layer_ORD 41
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_keymap_S_lowered_layer_REQUIRES_ORDS \
 	25, /* /keymap */ \
 	26, /* /behaviors/behavior_key_press */ \
 	37, /* /behaviors/behavior_transparent */ \
-	39, /* /behaviors/behavior_none */
+	39, /* /behaviors/behavior_bluetooth */ \
+	40, /* /behaviors/behavior_none */
 
 /* Ordinals for what depends directly on this node: */
 #define DT_N_S_keymap_S_lowered_layer_SUPPORTS_ORDS /* nothing */
@@ -4288,7 +4367,11 @@
 #define DT_N_S_keymap_S_lowered_layer_P_bindings_IDX_28_EXISTS 1
 #define DT_N_S_keymap_S_lowered_layer_P_bindings_IDX_28_PH DT_N_S_behaviors_S_behavior_none
 #define DT_N_S_keymap_S_lowered_layer_P_bindings_IDX_29_EXISTS 1
-#define DT_N_S_keymap_S_lowered_layer_P_bindings_IDX_29_PH DT_N_S_behaviors_S_behavior_none
+#define DT_N_S_keymap_S_lowered_layer_P_bindings_IDX_29_PH DT_N_S_behaviors_S_behavior_bluetooth
+#define DT_N_S_keymap_S_lowered_layer_P_bindings_IDX_29_VAL_param1 0
+#define DT_N_S_keymap_S_lowered_layer_P_bindings_IDX_29_VAL_param1_EXISTS 1
+#define DT_N_S_keymap_S_lowered_layer_P_bindings_IDX_29_VAL_param2 0
+#define DT_N_S_keymap_S_lowered_layer_P_bindings_IDX_29_VAL_param2_EXISTS 1
 #define DT_N_S_keymap_S_lowered_layer_P_bindings_IDX_30_EXISTS 1
 #define DT_N_S_keymap_S_lowered_layer_P_bindings_IDX_30_PH DT_N_S_behaviors_S_behavior_transparent
 #define DT_N_S_keymap_S_lowered_layer_P_bindings_IDX_31_EXISTS 1
@@ -4399,14 +4482,14 @@
 #define DT_N_S_keymap_S_raised_layer_FOREACH_CHILD_STATUS_OKAY_VARGS(fn, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_keymap_S_raised_layer_ORD 41
+#define DT_N_S_keymap_S_raised_layer_ORD 42
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_keymap_S_raised_layer_REQUIRES_ORDS \
 	25, /* /keymap */ \
 	26, /* /behaviors/behavior_key_press */ \
 	37, /* /behaviors/behavior_transparent */ \
-	39, /* /behaviors/behavior_none */
+	40, /* /behaviors/behavior_none */
 
 /* Ordinals for what depends directly on this node: */
 #define DT_N_S_keymap_S_raised_layer_SUPPORTS_ORDS /* nothing */
@@ -4654,7 +4737,7 @@
 #define DT_N_S_leds_FOREACH_CHILD_STATUS_OKAY_VARGS(fn, ...) fn(DT_N_S_leds_S_led_0, __VA_ARGS__) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_leds_ORD 42
+#define DT_N_S_leds_ORD 43
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_leds_REQUIRES_ORDS \
@@ -4662,7 +4745,7 @@
 
 /* Ordinals for what depends directly on this node: */
 #define DT_N_S_leds_SUPPORTS_ORDS \
-	43, /* /leds/led_0 */
+	44, /* /leds/led_0 */
 
 /* Existence and alternate IDs: */
 #define DT_N_S_leds_EXISTS 1
@@ -4704,12 +4787,12 @@
 #define DT_N_S_leds_S_led_0_FOREACH_CHILD_STATUS_OKAY_VARGS(fn, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_leds_S_led_0_ORD 43
+#define DT_N_S_leds_S_led_0_ORD 44
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_leds_S_led_0_REQUIRES_ORDS \
 	5, /* /soc/gpio@50000000 */ \
-	42, /* /leds */
+	43, /* /leds */
 
 /* Ordinals for what depends directly on this node: */
 #define DT_N_S_leds_S_led_0_SUPPORTS_ORDS /* nothing */
@@ -4786,7 +4869,7 @@
 #define DT_N_S_soc_S_adc_40007000_FOREACH_CHILD_STATUS_OKAY_VARGS(fn, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_adc_40007000_ORD 44
+#define DT_N_S_soc_S_adc_40007000_ORD 45
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_adc_40007000_REQUIRES_ORDS \
@@ -4907,7 +4990,7 @@
 #define DT_N_S_soc_S_clock_40000000_FOREACH_CHILD_STATUS_OKAY_VARGS(fn, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_clock_40000000_ORD 45
+#define DT_N_S_soc_S_clock_40000000_ORD 46
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_clock_40000000_REQUIRES_ORDS \
@@ -5028,7 +5111,7 @@
 #define DT_N_S_soc_S_ecb_4000e000_FOREACH_CHILD_STATUS_OKAY_VARGS(fn, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_ecb_4000e000_ORD 46
+#define DT_N_S_soc_S_ecb_4000e000_ORD 47
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_ecb_4000e000_REQUIRES_ORDS \
@@ -5145,7 +5228,7 @@
 #define DT_N_S_soc_S_egu_40014000_FOREACH_CHILD_STATUS_OKAY_VARGS(fn, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_egu_40014000_ORD 47
+#define DT_N_S_soc_S_egu_40014000_ORD 48
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_egu_40014000_REQUIRES_ORDS \
@@ -5252,7 +5335,7 @@
 #define DT_N_S_soc_S_egu_40015000_FOREACH_CHILD_STATUS_OKAY_VARGS(fn, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_egu_40015000_ORD 48
+#define DT_N_S_soc_S_egu_40015000_ORD 49
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_egu_40015000_REQUIRES_ORDS \
@@ -5359,7 +5442,7 @@
 #define DT_N_S_soc_S_egu_40016000_FOREACH_CHILD_STATUS_OKAY_VARGS(fn, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_egu_40016000_ORD 49
+#define DT_N_S_soc_S_egu_40016000_ORD 50
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_egu_40016000_REQUIRES_ORDS \
@@ -5466,7 +5549,7 @@
 #define DT_N_S_soc_S_egu_40017000_FOREACH_CHILD_STATUS_OKAY_VARGS(fn, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_egu_40017000_ORD 50
+#define DT_N_S_soc_S_egu_40017000_ORD 51
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_egu_40017000_REQUIRES_ORDS \
@@ -5573,7 +5656,7 @@
 #define DT_N_S_soc_S_egu_40018000_FOREACH_CHILD_STATUS_OKAY_VARGS(fn, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_egu_40018000_ORD 51
+#define DT_N_S_soc_S_egu_40018000_ORD 52
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_egu_40018000_REQUIRES_ORDS \
@@ -5680,7 +5763,7 @@
 #define DT_N_S_soc_S_egu_40019000_FOREACH_CHILD_STATUS_OKAY_VARGS(fn, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_egu_40019000_ORD 52
+#define DT_N_S_soc_S_egu_40019000_ORD 53
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_egu_40019000_REQUIRES_ORDS \
@@ -5787,7 +5870,7 @@
 #define DT_N_S_soc_S_ficr_10000000_FOREACH_CHILD_STATUS_OKAY_VARGS(fn, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_ficr_10000000_ORD 53
+#define DT_N_S_soc_S_ficr_10000000_ORD 54
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_ficr_10000000_REQUIRES_ORDS \
@@ -5877,7 +5960,7 @@
 #define DT_N_S_soc_S_gpiote_40006000_FOREACH_CHILD_STATUS_OKAY_VARGS(fn, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_gpiote_40006000_ORD 54
+#define DT_N_S_soc_S_gpiote_40006000_ORD 55
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_gpiote_40006000_REQUIRES_ORDS \
@@ -6004,7 +6087,7 @@
 #define DT_N_S_soc_S_i2c_40003000_FOREACH_CHILD_STATUS_OKAY_VARGS(fn, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_i2c_40003000_ORD 55
+#define DT_N_S_soc_S_i2c_40003000_ORD 56
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_i2c_40003000_REQUIRES_ORDS \
@@ -6139,7 +6222,7 @@
 #define DT_N_S_soc_S_i2c_40004000_FOREACH_CHILD_STATUS_OKAY_VARGS(fn, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_i2c_40004000_ORD 56
+#define DT_N_S_soc_S_i2c_40004000_ORD 57
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_i2c_40004000_REQUIRES_ORDS \
@@ -6274,7 +6357,7 @@
 #define DT_N_S_soc_S_i2s_40025000_FOREACH_CHILD_STATUS_OKAY_VARGS(fn, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_i2s_40025000_ORD 57
+#define DT_N_S_soc_S_i2s_40025000_ORD 58
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_i2s_40025000_REQUIRES_ORDS \
@@ -6434,7 +6517,7 @@
 #define DT_N_S_soc_S_memory_20000000_FOREACH_CHILD_STATUS_OKAY_VARGS(fn, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_memory_20000000_ORD 58
+#define DT_N_S_soc_S_memory_20000000_ORD 59
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_memory_20000000_REQUIRES_ORDS \
@@ -6509,7 +6592,7 @@
 #define DT_N_S_soc_S_pdm_4001d000_FOREACH_CHILD_STATUS_OKAY_VARGS(fn, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_pdm_4001d000_ORD 59
+#define DT_N_S_soc_S_pdm_4001d000_ORD 60
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_pdm_4001d000_REQUIRES_ORDS \
@@ -6671,7 +6754,7 @@
 #define DT_N_S_soc_S_pwm_4001c000_FOREACH_CHILD_STATUS_OKAY_VARGS(fn, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_pwm_4001c000_ORD 60
+#define DT_N_S_soc_S_pwm_4001c000_ORD 61
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_pwm_4001c000_REQUIRES_ORDS \
@@ -6810,7 +6893,7 @@
 #define DT_N_S_soc_S_pwm_40021000_FOREACH_CHILD_STATUS_OKAY_VARGS(fn, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_pwm_40021000_ORD 61
+#define DT_N_S_soc_S_pwm_40021000_ORD 62
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_pwm_40021000_REQUIRES_ORDS \
@@ -6949,7 +7032,7 @@
 #define DT_N_S_soc_S_pwm_40022000_FOREACH_CHILD_STATUS_OKAY_VARGS(fn, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_pwm_40022000_ORD 62
+#define DT_N_S_soc_S_pwm_40022000_ORD 63
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_pwm_40022000_REQUIRES_ORDS \
@@ -7088,7 +7171,7 @@
 #define DT_N_S_soc_S_pwm_4002d000_FOREACH_CHILD_STATUS_OKAY_VARGS(fn, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_pwm_4002d000_ORD 63
+#define DT_N_S_soc_S_pwm_4002d000_ORD 64
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_pwm_4002d000_REQUIRES_ORDS \
@@ -7227,7 +7310,7 @@
 #define DT_N_S_soc_S_qdec_40012000_FOREACH_CHILD_STATUS_OKAY_VARGS(fn, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_qdec_40012000_ORD 64
+#define DT_N_S_soc_S_qdec_40012000_ORD 65
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_qdec_40012000_REQUIRES_ORDS \
@@ -7354,7 +7437,7 @@
 #define DT_N_S_soc_S_qspi_40029000_FOREACH_CHILD_STATUS_OKAY_VARGS(fn, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_qspi_40029000_ORD 65
+#define DT_N_S_soc_S_qspi_40029000_ORD 66
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_qspi_40029000_REQUIRES_ORDS \
@@ -7507,7 +7590,7 @@
 #define DT_N_S_soc_S_radio_40001000_FOREACH_CHILD_STATUS_OKAY_VARGS(fn, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_radio_40001000_ORD 66
+#define DT_N_S_soc_S_radio_40001000_ORD 67
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_radio_40001000_REQUIRES_ORDS \
@@ -7616,7 +7699,7 @@
 #define DT_N_S_soc_S_random_4000d000_FOREACH_CHILD_STATUS_OKAY_VARGS(fn, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_random_4000d000_ORD 67
+#define DT_N_S_soc_S_random_4000d000_ORD 68
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_random_4000d000_REQUIRES_ORDS \
@@ -7733,7 +7816,7 @@
 #define DT_N_S_soc_S_rtc_4000b000_FOREACH_CHILD_STATUS_OKAY_VARGS(fn, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_rtc_4000b000_ORD 68
+#define DT_N_S_soc_S_rtc_4000b000_ORD 69
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_rtc_4000b000_REQUIRES_ORDS \
@@ -7864,7 +7947,7 @@
 #define DT_N_S_soc_S_rtc_40011000_FOREACH_CHILD_STATUS_OKAY_VARGS(fn, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_rtc_40011000_ORD 69
+#define DT_N_S_soc_S_rtc_40011000_ORD 70
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_rtc_40011000_REQUIRES_ORDS \
@@ -7995,7 +8078,7 @@
 #define DT_N_S_soc_S_rtc_40024000_FOREACH_CHILD_STATUS_OKAY_VARGS(fn, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_rtc_40024000_ORD 70
+#define DT_N_S_soc_S_rtc_40024000_ORD 71
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_rtc_40024000_REQUIRES_ORDS \
@@ -8126,7 +8209,7 @@
 #define DT_N_S_soc_S_spi_40003000_FOREACH_CHILD_STATUS_OKAY_VARGS(fn, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_spi_40003000_ORD 71
+#define DT_N_S_soc_S_spi_40003000_ORD 72
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_spi_40003000_REQUIRES_ORDS \
@@ -8261,7 +8344,7 @@
 #define DT_N_S_soc_S_spi_40004000_FOREACH_CHILD_STATUS_OKAY_VARGS(fn, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_spi_40004000_ORD 72
+#define DT_N_S_soc_S_spi_40004000_ORD 73
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_spi_40004000_REQUIRES_ORDS \
@@ -8396,7 +8479,7 @@
 #define DT_N_S_soc_S_spi_40023000_FOREACH_CHILD_STATUS_OKAY_VARGS(fn, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_spi_40023000_ORD 73
+#define DT_N_S_soc_S_spi_40023000_ORD 74
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_spi_40023000_REQUIRES_ORDS \
@@ -8531,7 +8614,7 @@
 #define DT_N_S_soc_S_spi_4002f000_FOREACH_CHILD_STATUS_OKAY_VARGS(fn, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_spi_4002f000_ORD 74
+#define DT_N_S_soc_S_spi_4002f000_ORD 75
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_spi_4002f000_REQUIRES_ORDS \
@@ -8666,7 +8749,7 @@
 #define DT_N_S_soc_S_temp_4000c000_FOREACH_CHILD_STATUS_OKAY_VARGS(fn, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_temp_4000c000_ORD 75
+#define DT_N_S_soc_S_temp_4000c000_ORD 76
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_temp_4000c000_REQUIRES_ORDS \
@@ -8789,7 +8872,7 @@
 #define DT_N_S_soc_S_timer_40008000_FOREACH_CHILD_STATUS_OKAY_VARGS(fn, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_timer_40008000_ORD 76
+#define DT_N_S_soc_S_timer_40008000_ORD 77
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_timer_40008000_REQUIRES_ORDS \
@@ -8918,7 +9001,7 @@
 #define DT_N_S_soc_S_timer_40009000_FOREACH_CHILD_STATUS_OKAY_VARGS(fn, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_timer_40009000_ORD 77
+#define DT_N_S_soc_S_timer_40009000_ORD 78
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_timer_40009000_REQUIRES_ORDS \
@@ -9047,7 +9130,7 @@
 #define DT_N_S_soc_S_timer_4001a000_FOREACH_CHILD_STATUS_OKAY_VARGS(fn, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_timer_4001a000_ORD 78
+#define DT_N_S_soc_S_timer_4001a000_ORD 79
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_timer_4001a000_REQUIRES_ORDS \
@@ -9176,7 +9259,7 @@
 #define DT_N_S_soc_S_timer_4001b000_FOREACH_CHILD_STATUS_OKAY_VARGS(fn, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_timer_4001b000_ORD 79
+#define DT_N_S_soc_S_timer_4001b000_ORD 80
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_timer_4001b000_REQUIRES_ORDS \
@@ -9299,7 +9382,7 @@
 #define DT_N_S_soc_S_timer_e000e010_FOREACH_CHILD_STATUS_OKAY_VARGS(fn, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_timer_e000e010_ORD 80
+#define DT_N_S_soc_S_timer_e000e010_ORD 81
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_timer_e000e010_REQUIRES_ORDS \
@@ -9395,7 +9478,7 @@
 #define DT_N_S_soc_S_uart_40002000_FOREACH_CHILD_STATUS_OKAY_VARGS(fn, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_uart_40002000_ORD 81
+#define DT_N_S_soc_S_uart_40002000_ORD 82
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_uart_40002000_REQUIRES_ORDS \
@@ -9538,7 +9621,7 @@
 #define DT_N_S_soc_S_uart_40028000_FOREACH_CHILD_STATUS_OKAY_VARGS(fn, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_uart_40028000_ORD 82
+#define DT_N_S_soc_S_uart_40028000_ORD 83
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_uart_40028000_REQUIRES_ORDS \
@@ -9677,7 +9760,7 @@
 #define DT_N_S_soc_S_uicr_10001000_FOREACH_CHILD_STATUS_OKAY_VARGS(fn, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_uicr_10001000_ORD 83
+#define DT_N_S_soc_S_uicr_10001000_ORD 84
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_uicr_10001000_REQUIRES_ORDS \
@@ -9767,7 +9850,7 @@
 #define DT_N_S_soc_S_watchdog_40010000_FOREACH_CHILD_STATUS_OKAY_VARGS(fn, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_watchdog_40010000_ORD 84
+#define DT_N_S_soc_S_watchdog_40010000_ORD 85
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_watchdog_40010000_REQUIRES_ORDS \
@@ -9885,7 +9968,7 @@
 #define DT_N_S_soc_S_crypto_5002a000_FOREACH_CHILD_STATUS_OKAY_VARGS(fn, ...) fn(DT_N_S_soc_S_crypto_5002a000_S_crypto_5002b000, __VA_ARGS__) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_crypto_5002a000_ORD 85
+#define DT_N_S_soc_S_crypto_5002a000_ORD 86
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_crypto_5002a000_REQUIRES_ORDS \
@@ -9893,7 +9976,7 @@
 
 /* Ordinals for what depends directly on this node: */
 #define DT_N_S_soc_S_crypto_5002a000_SUPPORTS_ORDS \
-	86, /* /soc/crypto@5002a000/crypto@5002b000 */
+	87, /* /soc/crypto@5002a000/crypto@5002b000 */
 
 /* Existence and alternate IDs: */
 #define DT_N_S_soc_S_crypto_5002a000_EXISTS 1
@@ -10000,12 +10083,12 @@
 #define DT_N_S_soc_S_crypto_5002a000_S_crypto_5002b000_FOREACH_CHILD_STATUS_OKAY_VARGS(fn, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_crypto_5002a000_S_crypto_5002b000_ORD 86
+#define DT_N_S_soc_S_crypto_5002a000_S_crypto_5002b000_ORD 87
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_crypto_5002a000_S_crypto_5002b000_REQUIRES_ORDS \
 	9, /* /soc/interrupt-controller@e000e100 */ \
-	85, /* /soc/crypto@5002a000 */
+	86, /* /soc/crypto@5002a000 */
 
 /* Ordinals for what depends directly on this node: */
 #define DT_N_S_soc_S_crypto_5002a000_S_crypto_5002b000_SUPPORTS_ORDS /* nothing */
@@ -10122,7 +10205,7 @@
 #define DT_N_S_soc_S_flash_controller_4001e000_FOREACH_CHILD_STATUS_OKAY_VARGS(fn, ...) fn(DT_N_S_soc_S_flash_controller_4001e000_S_flash_0, __VA_ARGS__) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_flash_controller_4001e000_ORD 87
+#define DT_N_S_soc_S_flash_controller_4001e000_ORD 88
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_flash_controller_4001e000_REQUIRES_ORDS \
@@ -10130,7 +10213,7 @@
 
 /* Ordinals for what depends directly on this node: */
 #define DT_N_S_soc_S_flash_controller_4001e000_SUPPORTS_ORDS \
-	88, /* /soc/flash-controller@4001e000/flash@0 */
+	89, /* /soc/flash-controller@4001e000/flash@0 */
 
 /* Existence and alternate IDs: */
 #define DT_N_S_soc_S_flash_controller_4001e000_EXISTS 1
@@ -10238,15 +10321,15 @@
 #define DT_N_S_soc_S_flash_controller_4001e000_S_flash_0_FOREACH_CHILD_STATUS_OKAY_VARGS(fn, ...) fn(DT_N_S_soc_S_flash_controller_4001e000_S_flash_0_S_partitions, __VA_ARGS__) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_flash_controller_4001e000_S_flash_0_ORD 88
+#define DT_N_S_soc_S_flash_controller_4001e000_S_flash_0_ORD 89
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_flash_controller_4001e000_S_flash_0_REQUIRES_ORDS \
-	87, /* /soc/flash-controller@4001e000 */
+	88, /* /soc/flash-controller@4001e000 */
 
 /* Ordinals for what depends directly on this node: */
 #define DT_N_S_soc_S_flash_controller_4001e000_S_flash_0_SUPPORTS_ORDS \
-	89, /* /soc/flash-controller@4001e000/flash@0/partitions */
+	90, /* /soc/flash-controller@4001e000/flash@0/partitions */
 
 /* Existence and alternate IDs: */
 #define DT_N_S_soc_S_flash_controller_4001e000_S_flash_0_EXISTS 1
@@ -10340,18 +10423,18 @@
 #define DT_N_S_soc_S_flash_controller_4001e000_S_flash_0_S_partitions_FOREACH_CHILD_STATUS_OKAY_VARGS(fn, ...) fn(DT_N_S_soc_S_flash_controller_4001e000_S_flash_0_S_partitions_S_partition_0, __VA_ARGS__) fn(DT_N_S_soc_S_flash_controller_4001e000_S_flash_0_S_partitions_S_partition_26000, __VA_ARGS__) fn(DT_N_S_soc_S_flash_controller_4001e000_S_flash_0_S_partitions_S_partition_ec000, __VA_ARGS__) fn(DT_N_S_soc_S_flash_controller_4001e000_S_flash_0_S_partitions_S_partition_f4000, __VA_ARGS__) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_flash_controller_4001e000_S_flash_0_S_partitions_ORD 89
+#define DT_N_S_soc_S_flash_controller_4001e000_S_flash_0_S_partitions_ORD 90
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_flash_controller_4001e000_S_flash_0_S_partitions_REQUIRES_ORDS \
-	88, /* /soc/flash-controller@4001e000/flash@0 */
+	89, /* /soc/flash-controller@4001e000/flash@0 */
 
 /* Ordinals for what depends directly on this node: */
 #define DT_N_S_soc_S_flash_controller_4001e000_S_flash_0_S_partitions_SUPPORTS_ORDS \
-	90, /* /soc/flash-controller@4001e000/flash@0/partitions/partition@0 */ \
-	91, /* /soc/flash-controller@4001e000/flash@0/partitions/partition@26000 */ \
-	92, /* /soc/flash-controller@4001e000/flash@0/partitions/partition@ec000 */ \
-	93, /* /soc/flash-controller@4001e000/flash@0/partitions/partition@f4000 */
+	91, /* /soc/flash-controller@4001e000/flash@0/partitions/partition@0 */ \
+	92, /* /soc/flash-controller@4001e000/flash@0/partitions/partition@26000 */ \
+	93, /* /soc/flash-controller@4001e000/flash@0/partitions/partition@ec000 */ \
+	94, /* /soc/flash-controller@4001e000/flash@0/partitions/partition@f4000 */
 
 /* Existence and alternate IDs: */
 #define DT_N_S_soc_S_flash_controller_4001e000_S_flash_0_S_partitions_EXISTS 1
@@ -10393,11 +10476,11 @@
 #define DT_N_S_soc_S_flash_controller_4001e000_S_flash_0_S_partitions_S_partition_0_FOREACH_CHILD_STATUS_OKAY_VARGS(fn, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_flash_controller_4001e000_S_flash_0_S_partitions_S_partition_0_ORD 90
+#define DT_N_S_soc_S_flash_controller_4001e000_S_flash_0_S_partitions_S_partition_0_ORD 91
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_flash_controller_4001e000_S_flash_0_S_partitions_S_partition_0_REQUIRES_ORDS \
-	89, /* /soc/flash-controller@4001e000/flash@0/partitions */
+	90, /* /soc/flash-controller@4001e000/flash@0/partitions */
 
 /* Ordinals for what depends directly on this node: */
 #define DT_N_S_soc_S_flash_controller_4001e000_S_flash_0_S_partitions_S_partition_0_SUPPORTS_ORDS /* nothing */
@@ -10483,11 +10566,11 @@
 #define DT_N_S_soc_S_flash_controller_4001e000_S_flash_0_S_partitions_S_partition_26000_FOREACH_CHILD_STATUS_OKAY_VARGS(fn, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_flash_controller_4001e000_S_flash_0_S_partitions_S_partition_26000_ORD 91
+#define DT_N_S_soc_S_flash_controller_4001e000_S_flash_0_S_partitions_S_partition_26000_ORD 92
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_flash_controller_4001e000_S_flash_0_S_partitions_S_partition_26000_REQUIRES_ORDS \
-	89, /* /soc/flash-controller@4001e000/flash@0/partitions */
+	90, /* /soc/flash-controller@4001e000/flash@0/partitions */
 
 /* Ordinals for what depends directly on this node: */
 #define DT_N_S_soc_S_flash_controller_4001e000_S_flash_0_S_partitions_S_partition_26000_SUPPORTS_ORDS /* nothing */
@@ -10581,11 +10664,11 @@
 #define DT_N_S_soc_S_flash_controller_4001e000_S_flash_0_S_partitions_S_partition_ec000_FOREACH_CHILD_STATUS_OKAY_VARGS(fn, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_flash_controller_4001e000_S_flash_0_S_partitions_S_partition_ec000_ORD 92
+#define DT_N_S_soc_S_flash_controller_4001e000_S_flash_0_S_partitions_S_partition_ec000_ORD 93
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_flash_controller_4001e000_S_flash_0_S_partitions_S_partition_ec000_REQUIRES_ORDS \
-	89, /* /soc/flash-controller@4001e000/flash@0/partitions */
+	90, /* /soc/flash-controller@4001e000/flash@0/partitions */
 
 /* Ordinals for what depends directly on this node: */
 #define DT_N_S_soc_S_flash_controller_4001e000_S_flash_0_S_partitions_S_partition_ec000_SUPPORTS_ORDS /* nothing */
@@ -10665,11 +10748,11 @@
 #define DT_N_S_soc_S_flash_controller_4001e000_S_flash_0_S_partitions_S_partition_f4000_FOREACH_CHILD_STATUS_OKAY_VARGS(fn, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_flash_controller_4001e000_S_flash_0_S_partitions_S_partition_f4000_ORD 93
+#define DT_N_S_soc_S_flash_controller_4001e000_S_flash_0_S_partitions_S_partition_f4000_ORD 94
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_flash_controller_4001e000_S_flash_0_S_partitions_S_partition_f4000_REQUIRES_ORDS \
-	89, /* /soc/flash-controller@4001e000/flash@0/partitions */
+	90, /* /soc/flash-controller@4001e000/flash@0/partitions */
 
 /* Ordinals for what depends directly on this node: */
 #define DT_N_S_soc_S_flash_controller_4001e000_S_flash_0_S_partitions_S_partition_f4000_SUPPORTS_ORDS /* nothing */
@@ -10764,7 +10847,7 @@
 #define DT_N_S_soc_S_usbd_40027000_FOREACH_CHILD_STATUS_OKAY_VARGS(fn, ...) fn(DT_N_S_soc_S_usbd_40027000_S_cdc_acm_uart, __VA_ARGS__) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_usbd_40027000_ORD 94
+#define DT_N_S_soc_S_usbd_40027000_ORD 95
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_usbd_40027000_REQUIRES_ORDS \
@@ -10773,7 +10856,7 @@
 
 /* Ordinals for what depends directly on this node: */
 #define DT_N_S_soc_S_usbd_40027000_SUPPORTS_ORDS \
-	95, /* /soc/usbd@40027000/cdc_acm_uart */
+	96, /* /soc/usbd@40027000/cdc_acm_uart */
 
 /* Existence and alternate IDs: */
 #define DT_N_S_soc_S_usbd_40027000_EXISTS 1
@@ -10894,11 +10977,11 @@
 #define DT_N_S_soc_S_usbd_40027000_S_cdc_acm_uart_FOREACH_CHILD_STATUS_OKAY_VARGS(fn, ...) 
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_usbd_40027000_S_cdc_acm_uart_ORD 95
+#define DT_N_S_soc_S_usbd_40027000_S_cdc_acm_uart_ORD 96
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_usbd_40027000_S_cdc_acm_uart_REQUIRES_ORDS \
-	94, /* /soc/usbd@40027000 */
+	95, /* /soc/usbd@40027000 */
 
 /* Ordinals for what depends directly on this node: */
 #define DT_N_S_soc_S_usbd_40027000_S_cdc_acm_uart_SUPPORTS_ORDS /* nothing */
@@ -11031,6 +11114,7 @@
 #define DT_COMPAT_HAS_OKAY_zmk_behavior_momentary_layer 1
 #define DT_COMPAT_HAS_OKAY_zmk_behavior_reset 1
 #define DT_COMPAT_HAS_OKAY_zmk_behavior_rgb_underglow 1
+#define DT_COMPAT_HAS_OKAY_zmk_behavior_bluetooth 1
 #define DT_COMPAT_HAS_OKAY_zmk_behavior_ext_power 1
 #define DT_COMPAT_HAS_OKAY_zmk_macro_control_mode_tap 1
 #define DT_COMPAT_HAS_OKAY_zmk_macro_control_mode_press 1
@@ -11086,6 +11170,7 @@
 #define DT_N_INST_zmk_behavior_momentary_layer_NUM_OKAY 1
 #define DT_N_INST_zmk_behavior_reset_NUM_OKAY 2
 #define DT_N_INST_zmk_behavior_rgb_underglow_NUM_OKAY 1
+#define DT_N_INST_zmk_behavior_bluetooth_NUM_OKAY 1
 #define DT_N_INST_zmk_behavior_ext_power_NUM_OKAY 1
 #define DT_N_INST_zmk_macro_control_mode_tap_NUM_OKAY 1
 #define DT_N_INST_zmk_macro_control_mode_press_NUM_OKAY 1
@@ -11257,6 +11342,10 @@
 #define DT_FOREACH_OKAY_VARGS_zmk_behavior_rgb_underglow(fn, ...) fn(DT_N_S_behaviors_S_behavior_rgb_underglow, __VA_ARGS__)
 #define DT_FOREACH_OKAY_INST_zmk_behavior_rgb_underglow(fn) fn(0)
 #define DT_FOREACH_OKAY_INST_VARGS_zmk_behavior_rgb_underglow(fn, ...) fn(0, __VA_ARGS__)
+#define DT_FOREACH_OKAY_zmk_behavior_bluetooth(fn) fn(DT_N_S_behaviors_S_behavior_bluetooth)
+#define DT_FOREACH_OKAY_VARGS_zmk_behavior_bluetooth(fn, ...) fn(DT_N_S_behaviors_S_behavior_bluetooth, __VA_ARGS__)
+#define DT_FOREACH_OKAY_INST_zmk_behavior_bluetooth(fn) fn(0)
+#define DT_FOREACH_OKAY_INST_VARGS_zmk_behavior_bluetooth(fn, ...) fn(0, __VA_ARGS__)
 #define DT_FOREACH_OKAY_zmk_behavior_ext_power(fn) fn(DT_N_S_behaviors_S_behavior_ext_power)
 #define DT_FOREACH_OKAY_VARGS_zmk_behavior_ext_power(fn, ...) fn(DT_N_S_behaviors_S_behavior_ext_power, __VA_ARGS__)
 #define DT_FOREACH_OKAY_INST_zmk_behavior_ext_power(fn) fn(0)
