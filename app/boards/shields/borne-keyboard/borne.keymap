@@ -34,72 +34,88 @@
 		};
 	};
 
-	//IMPROVEMENT: Unicode sequency macros are super boilerplatey, can probably be replaced with preprocessor macro
+	//IMPROVEMENT: 
+	// Unicode sequency macros are super boilerplatey, can probably be replaced with preprocessor macro
 	// https://zmk.dev/docs/behaviors/macros#convenience-c-macro
-	macros {
-		// ö = U+00D6
-		diaeresis_o: diaeresis_o {
-			label = "diaeresis_o";
-			compatible = "zmk,behavior-macro";
-			// Default is 100ms 
-			// https://zmk.dev/docs/behaviors/macros#tap-time
-			tap-ms = <10>;
-			#binding-cells = <0>;
-			bindings =
-				<&macro_press &kp LSHIFT>, 
-				<&macro_press &kp LCTRL>, 
-				<&macro_tap &kp U>,
-				<&macro_release &kp LSHIFT>, 
-				<&macro_release &kp LCTRL>, 
-				<&kp N0 &kp N0 &kp D &kp N6 &kp RET>
-			;
-		};
+	// Keeping an eye on https://github.com/zmkfirmware/zmk/issues/232
+	// FIX:
+	/* 
+		macros {
+			// ö = U+00D6
+			diaeresis_o: diaeresis_o {
+				label = "diaeresis_o";
+				compatible = "zmk,behavior-macro";
+				// Default is 100ms 
+				// https://zmk.dev/docs/behaviors/macros#tap-time
+				tap-ms = <10>;
+				#binding-cells = <0>;
+				bindings =
+					<&macro_press &kp LSHIFT>, 
+					<&macro_press &kp LCTRL>, 
+					<&macro_tap &kp U>,
+					<&macro_release &kp LSHIFT>, 
+					<&macro_release &kp LCTRL>, 
+					<&kp N0 &kp N0 &kp D &kp N6 &kp RET>
+				;
+			};
 
-		// ä = U+00C4
-		diaeresis_a: diaeresis_a {
-			label = "diaeresis_o";
-			compatible = "zmk,behavior-macro";
-			tap-ms = <10>;
-			#binding-cells = <0>;
-			bindings =
-				<&macro_press &kp LSHIFT>, 
-				<&macro_press &kp LCTRL>, 
-				<&macro_tap &kp U>,
-				<&macro_release &kp LSHIFT>, 
-				<&macro_release &kp LCTRL>, 
-				<&kp N0 &kp N0 &kp C &kp N4 &kp RET>
-			;
-		};
+			// ä = U+00C4
+			diaeresis_a: diaeresis_a {
+				label = "diaeresis_o";
+				compatible = "zmk,behavior-macro";
+				tap-ms = <10>;
+				#binding-cells = <0>;
+				bindings =
+					<&macro_press &kp LSHIFT>, 
+					<&macro_press &kp LCTRL>, 
+					<&macro_tap &kp U>,
+					<&macro_release &kp LSHIFT>, 
+					<&macro_release &kp LCTRL>, 
+					<&kp N0 &kp N0 &kp C &kp N4 &kp RET>
+				;
+			};
 
-		// å = U+00C5
-		ring_a: ring_a {
-			label = "ring_a";
-			compatible = "zmk,behavior-macro";
-			tap-ms = <10>;
-			#binding-cells = <0>;
-			bindings =
-				<&macro_press &kp LSHIFT>, 
-				<&macro_press &kp LCTRL>, 
-				<&macro_tap &kp U>,
-				<&macro_release &kp LSHIFT>, 
-				<&macro_release &kp LCTRL>, 
-				<&kp N0 &kp N0 &kp C &kp N5 &kp RET>
-			;
-		};
+			// å = U+00C5
+			ring_a: ring_a {
+				label = "ring_a";
+				compatible = "zmk,behavior-macro";
+				tap-ms = <10>;
+				#binding-cells = <0>;
+				bindings =
+					<&macro_press &kp LSHIFT>, 
+					<&macro_press &kp LCTRL>, 
+					<&macro_tap &kp U>,
+					<&macro_release &kp LSHIFT>, 
+					<&macro_release &kp LCTRL>, 
+					<&kp N0 &kp N0 &kp C &kp N5 &kp RET>
+				;
+			};
+		*/
 	};
 
 	keymap {
 		compatible = "zmk,keymap";
 
-		// http://www.keyboard-layout-editor.com/#/gists/0e81bf405ebbc268280f0506f7d0e771
+		// TEMP: placeholder until nordic letters are functional
 		default_layer {
 			bindings = <
 				&kp Q &kp W &kp E &kp R &kp T &kp Y &kp U &kp I &kp O &kp P 
-				&kp A &kp S &kp D &kp F &kp G &kp H &kp J &kp K &kp L &diaeresis_o
-				&kp Z &kp X &kp C &kp V &kp B &kp N &kp M &ring_a &diaeresis_a &kp LEFT_META
+				&kp A &kp S &kp D &kp F &kp G &kp H &kp J &kp K &kp L &none
+				&kp Z &kp X &kp C &kp V &kp B &kp N &kp M &none &none &kp LEFT_META
 				&kp LEFT_CONTROL &mo RAISE &mo LOWER &kp SPACE &kp RSHIFT &mod_alt_tap_dance
 			>;
 		};
+
+		/* 
+			default_layer {
+				bindings = <
+					&kp Q &kp W &kp E &kp R &kp T &kp Y &kp U &kp I &kp O &kp P 
+					&kp A &kp S &kp D &kp F &kp G &kp H &kp J &kp K &kp L &diaeresis_o
+					&kp Z &kp X &kp C &kp V &kp B &kp N &kp M &ring_a &diaeresis_a &kp LEFT_META
+					&kp LEFT_CONTROL &mo RAISE &mo LOWER &kp SPACE &kp RSHIFT &mod_alt_tap_dance
+				>;
+			};
+		*/
 
 		lowered_layer {
 			bindings = <
