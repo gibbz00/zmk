@@ -40,58 +40,58 @@
 	// Keeping an eye on https://github.com/zmkfirmware/zmk/issues/232
 	// FIX:
 	/* 
-		macros {
-			// ö = U+00D6
-			diaeresis_o: diaeresis_o {
-				label = "diaeresis_o";
-				compatible = "zmk,behavior-macro";
-				// Default is 100ms 
-				// https://zmk.dev/docs/behaviors/macros#tap-time
-				tap-ms = <10>;
-				#binding-cells = <0>;
-				bindings =
-					<&macro_press &kp LSHIFT>, 
-					<&macro_press &kp LCTRL>, 
-					<&macro_tap &kp U>,
-					<&macro_release &kp LSHIFT>, 
-					<&macro_release &kp LCTRL>, 
-					<&kp N0 &kp N0 &kp D &kp N6 &kp RET>
-				;
-			};
+	macros {
+		// ö = U+00D6
+		diaeresis_o: diaeresis_o {
+			label = "diaeresis_o";
+			compatible = "zmk,behavior-macro";
+			// Default is 100ms 
+			// https://zmk.dev/docs/behaviors/macros#tap-time
+			tap-ms = <10>;
+			#binding-cells = <0>;
+			bindings =
+				<&macro_press &kp LSHIFT>, 
+				<&macro_press &kp LCTRL>, 
+				<&macro_tap &kp U>,
+				<&macro_release &kp LSHIFT>, 
+				<&macro_release &kp LCTRL>, 
+				<&kp N0 &kp N0 &kp D &kp N6 &kp RET>
+			;
+		};
 
-			// ä = U+00C4
-			diaeresis_a: diaeresis_a {
-				label = "diaeresis_o";
-				compatible = "zmk,behavior-macro";
-				tap-ms = <10>;
-				#binding-cells = <0>;
-				bindings =
-					<&macro_press &kp LSHIFT>, 
-					<&macro_press &kp LCTRL>, 
-					<&macro_tap &kp U>,
-					<&macro_release &kp LSHIFT>, 
-					<&macro_release &kp LCTRL>, 
-					<&kp N0 &kp N0 &kp C &kp N4 &kp RET>
-				;
-			};
+		// ä = U+00C4
+		diaeresis_a: diaeresis_a {
+			label = "diaeresis_o";
+			compatible = "zmk,behavior-macro";
+			tap-ms = <10>;
+			#binding-cells = <0>;
+			bindings =
+				<&macro_press &kp LSHIFT>, 
+				<&macro_press &kp LCTRL>, 
+				<&macro_tap &kp U>,
+				<&macro_release &kp LSHIFT>, 
+				<&macro_release &kp LCTRL>, 
+				<&kp N0 &kp N0 &kp C &kp N4 &kp RET>
+			;
+		};
 
-			// å = U+00C5
-			ring_a: ring_a {
-				label = "ring_a";
-				compatible = "zmk,behavior-macro";
-				tap-ms = <10>;
-				#binding-cells = <0>;
-				bindings =
-					<&macro_press &kp LSHIFT>, 
-					<&macro_press &kp LCTRL>, 
-					<&macro_tap &kp U>,
-					<&macro_release &kp LSHIFT>, 
-					<&macro_release &kp LCTRL>, 
-					<&kp N0 &kp N0 &kp C &kp N5 &kp RET>
-				;
-			};
-		*/
+		// å = U+00C5
+		ring_a: ring_a {
+			label = "ring_a";
+			compatible = "zmk,behavior-macro";
+			tap-ms = <10>;
+			#binding-cells = <0>;
+			bindings =
+				<&macro_press &kp LSHIFT>, 
+				<&macro_press &kp LCTRL>, 
+				<&macro_tap &kp U>,
+				<&macro_release &kp LSHIFT>, 
+				<&macro_release &kp LCTRL>, 
+				<&kp N0 &kp N0 &kp C &kp N5 &kp RET>
+			;
+		};
 	};
+	*/
 
 	keymap {
 		compatible = "zmk,keymap";
