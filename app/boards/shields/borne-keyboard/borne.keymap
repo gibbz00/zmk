@@ -15,6 +15,10 @@
 #define RAISE 2
 #define FUNCTION 3
 
+&sk {
+    quick-release;
+};
+
 / {
 	behaviors {
 		mod_alt_tap_dance: mod_alt_tap_dance {
