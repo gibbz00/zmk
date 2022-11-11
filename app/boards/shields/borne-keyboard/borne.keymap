@@ -42,7 +42,7 @@
 	// Unicode sequency macros are super boilerplatey, can probably be replaced with preprocessor macro
 	// https://zmk.dev/docs/behaviors/macros#convenience-c-macro
 	// Keeping an eye on https://github.com/zmkfirmware/zmk/issues/232
-	// FIX:
+	// FIX: lower versions too
 	/* 
 	macros {
 		// ö = U+00D6
@@ -59,7 +59,7 @@
 				<&macro_tap &kp U>,
 				<&macro_release &kp LSHIFT>, 
 				<&macro_release &kp LCTRL>, 
-				<&kp N0 &kp N0 &kp D &kp N6 &kp RET>
+				<&kp N0 &kp N0 &kp D &kp N6 &kp SPACE>
 			;
 		};
 
@@ -75,7 +75,7 @@
 				<&macro_tap &kp U>,
 				<&macro_release &kp LSHIFT>, 
 				<&macro_release &kp LCTRL>, 
-				<&kp N0 &kp N0 &kp C &kp N4 &kp RET>
+				<&kp N0 &kp N0 &kp C &kp N4 &kp SPACE>
 			;
 		};
 
@@ -91,7 +91,7 @@
 				<&macro_tap &kp U>,
 				<&macro_release &kp LSHIFT>, 
 				<&macro_release &kp LCTRL>, 
-				<&kp N0 &kp N0 &kp C &kp N5 &kp RET>
+				<&kp N0 &kp N0 &kp C &kp N5 &kp SPACE>
 			;
 		};
 	};
@@ -100,26 +100,15 @@
 	keymap {
 		compatible = "zmk,keymap";
 
-		// TEMP: placeholder until nordic letters are functional
+		// Colemak-DH layout
 		default_layer {
 			bindings = <
-				&kp Q &kp W &kp E &kp R &kp T &kp Y &kp U &kp I &kp O &kp P 
-				&kp A &kp S &kp D &kp F &kp G &kp H &kp J &kp K &kp L &none
-				&kp Z &kp X &kp C &kp V &kp B &kp N &kp M &none &none &kp LEFT_META
+				&kp Q &kp W &kp F &kp P &kp B &kp J &kp L &kp U &kp Y &none 
+				&kp A &kp R &kp S &kp T &kp G &kp M &kp N &kp E &kp I &kp O
+				&kp Z &kp X &kp C &kp D &kp V &kp K &kp H &none &none &none
 				&sk LEFT_CONTROL &mo RAISE &mo LOWER &kp SPACE &kp RSHIFT &mod_alt_tap_dance
 			>;
 		};
-
-		/* 
-			default_layer {
-				bindings = <
-					&kp Q &kp W &kp E &kp R &kp T &kp Y &kp U &kp I &kp O &kp P 
-					&kp A &kp S &kp D &kp F &kp G &kp H &kp J &kp K &kp L &diaeresis_o
-					&kp Z &kp X &kp C &kp V &kp B &kp N &kp M &ring_a &diaeresis_a &kp LEFT_META
-					&kp LEFT_CONTROL &mo RAISE &mo LOWER &kp SPACE &kp RSHIFT &mod_alt_tap_dance
-				>;
-			};
-		*/
 
 		lowered_layer {
 			bindings = <
