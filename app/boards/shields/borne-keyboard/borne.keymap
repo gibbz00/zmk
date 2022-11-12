@@ -20,28 +20,8 @@
 };
 
 / {
-	behaviors {
-		mod_alt_tap_dance: mod_alt_tap_dance {
-			compatible = "zmk,behavior-tap-dance";
-			label = "MOD_ALT_TAP_DANCE";
-			#binding-cells = <0>;
-			tapping-term-ms = <400>;
-			bindings = <&kp LEFT_GUI>, <&kp LEFT_ALT>;
-		};
 
-		layer_tap_dance: layer_tap_dance {
-			compatible = "zmk,behavior-tap-dance";
-			label = "LAYER_TAP_DANCE";
-			#binding-cells = <0>;
-			tapping-term-ms = <400>;
-			bindings = <&mo LOWER>, <&mo RAISE>;
-		};
-	};
-
-	//IMPROVEMENT: 
-	// Unicode sequency macros are super boilerplatey, can probably be replaced with preprocessor macro
-	// https://zmk.dev/docs/behaviors/macros#convenience-c-macro
-	// Keeping an eye on https://github.com/zmkfirmware/zmk/issues/232
+	//IMPROVEMENT: moove theese into a separate compose key folder
 	// FIX: lower versions too
 	macros {
 		// ö = U+00D6
@@ -75,8 +55,26 @@
 			tap-ms = <0>;
 			#binding-cells = <0>;
 			bindings =
-				<&macro_tap &kp RA(O) &kp A>
+				<&macro_tap &kp RA(ASTERISK) &kp A>
 			;
+		};
+	};
+
+	behaviors {
+		mod_alt_tap_dance: mod_alt_tap_dance {
+			compatible = "zmk,behavior-tap-dance";
+			label = "MOD_ALT_TAP_DANCE";
+			#binding-cells = <0>;
+			tapping-term-ms = <400>;
+			bindings = <&kp LEFT_GUI>, <&kp LEFT_ALT>;
+		};
+
+		layer_tap_dance: layer_tap_dance {
+			compatible = "zmk,behavior-tap-dance";
+			label = "LAYER_TAP_DANCE";
+			#binding-cells = <0>;
+			tapping-term-ms = <400>;
+			bindings = <&mo LOWER>, <&mo RAISE>;
 		};
 	};
 
