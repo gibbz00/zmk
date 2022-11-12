@@ -112,8 +112,8 @@
 		function_layer {
 			bindings = <
 				&kp F1 &kp F2 &kp F3 &kp F4 &kp F5 &kp F6 &kp F7 &kp F8 &kp F9 &kp F10
-				&kp F11 &kp F12 &kp K_PREVIOUS &kp K_NEXT &kp K_PLAY_PAUSE &kp PRINTSCREEN &kp C_BRIGHTNESS_INC &kp C_BRIGHTNESS_DEC &kp INSERT &kp DELETE &out OUT_TOG &bt BT_CLR
-				&kp CAPSLOCK &kp SCROLLLOCK &kp K_VOLUME_DOWN &kp K_VOLUME_UP &kp K_MUTE 
+				&kp F11 &kp F12 &kp DELETE &kp INSERT &kp CAPSLOCK &kp K_PREVIOUS &kp K_VOLUME_DOWN &kp K_VOLUME_UP &kp K_NEXT &kp K_PLAY_PAUSE
+				&out OUT_TOG &bt BT_CLR &none &none &kp SCROLLLOCK &kp K_MUTE &kp C_BRIGHTNESS_DEC &kp C_BRIGHTNESS_INC &none &kp PRINTSCREEN 
 				&trans &trans &trans &trans &trans &trans
 			>;
 		};
