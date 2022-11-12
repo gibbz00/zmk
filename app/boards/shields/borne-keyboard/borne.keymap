@@ -50,31 +50,21 @@
 			compatible = "zmk,behavior-macro";
 			// Default is 100ms 
 			// https://zmk.dev/docs/behaviors/macros#tap-time
-			tap-ms = <10>;
+			tap-ms = <0>;
 			#binding-cells = <0>;
 			bindings =
-				<&macro_press &kp LSHIFT>, 
-				<&macro_press &kp LCTRL>, 
-				<&macro_tap &kp U>,
-				<&macro_release &kp LSHIFT>, 
-				<&macro_release &kp LCTRL>, 
-				<&kp N0 &kp N0 &kp D &kp N6 &kp SPACE>
+				<&macro_tap &kp RA(DOUBLE_QUOTES) &kp O>
 			;
 		};
 
 		// ä = U+00C4
 		diaeresis_a: diaeresis_a {
-			label = "diaeresis_o";
+			label = "diaeresis_a";
 			compatible = "zmk,behavior-macro";
-			tap-ms = <10>;
+			tap-ms = <0>;
 			#binding-cells = <0>;
 			bindings =
-				<&macro_press &kp LSHIFT>, 
-				<&macro_press &kp LCTRL>, 
-				<&macro_tap &kp U>,
-				<&macro_release &kp LSHIFT>, 
-				<&macro_release &kp LCTRL>, 
-				<&kp N0 &kp N0 &kp C &kp N4 &kp SPACE>
+				<&macro_tap &kp RA(DOUBLE_QUOTES) &kp A>
 			;
 		};
 
@@ -82,15 +72,10 @@
 		ring_a: ring_a {
 			label = "ring_a";
 			compatible = "zmk,behavior-macro";
-			tap-ms = <10>;
+			tap-ms = <0>;
 			#binding-cells = <0>;
 			bindings =
-				<&macro_press &kp LSHIFT>, 
-				<&macro_press &kp LCTRL>, 
-				<&macro_tap &kp U>,
-				<&macro_release &kp LSHIFT>, 
-				<&macro_release &kp LCTRL>, 
-				<&kp N0 &kp N0 &kp C &kp N5 &kp SPACE>
+				<&macro_tap &kp RA(O) &kp A>
 			;
 		};
 	};
