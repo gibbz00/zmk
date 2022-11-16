@@ -68,14 +68,6 @@
 			tapping-term-ms = <400>;
 			bindings = <&kp LEFT_GUI>, <&kp LEFT_ALT>;
 		};
-
-		layer_tap_dance: layer_tap_dance {
-			compatible = "zmk,behavior-tap-dance";
-			label = "LAYER_TAP_DANCE";
-			#binding-cells = <0>;
-			tapping-term-ms = <400>;
-			bindings = <&mo LOWER>, <&mo RAISE>;
-		};
 	};
 
 	keymap {
@@ -87,7 +79,7 @@
 				&kp Q &kp W &kp F &kp P &kp B &kp J &kp L &kp U &kp Y &ring_a
 				&kp A &kp R &kp S &kp T &kp G &kp M &kp N &kp E &kp I &kp O
 				&kp Z &kp X &kp C &kp D &kp V &kp K &kp H &diaeresis_a &diaeresis_o &none
-				&mo FUNCTION &sk LEFT_CONTROL &layer_tap_dance &kp SPACE &kp RSHIFT &mod_alt_tap_dance
+				&mo FUNCTION &mod_alt_tap_dance &mo LOWER &lt RAISE SPACE &kp RSHIFT &sk LEFT_CONTROL
 			>;
 		};
 
