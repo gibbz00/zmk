@@ -11,8 +11,8 @@
 
 // Number is the order in which the layer nodes appear
 #define DEFAULT 0
-#define LOWER 1
-#define RAISE 2
+#define CALC_LAYER 1
+#define UTIL_LAYER 2
 #define FUNCTION 3
 
 &sk {
@@ -83,24 +83,24 @@
 				&kp Q &kp W &kp F &kp P &kp B &kp J &kp L &kp U &kp Y &ring_a
 				&kp A &kp R &kp S &kp T &kp G &kp M &kp N &kp E &kp I &kp O
 				&kp Z &kp X &kp C &kp D &kp V &kp K &kp H &diaeresis_a &diaeresis_o &none
-				&mo FUNCTION &mod_alt_tap_dance &mo LOWER &lt RAISE SPACE &kp RSHIFT &sk LEFT_CONTROL
+				&mo FUNCTION &mod_alt_tap_dance &mo UTIL_LAYER &lt CALC_LAYER SPACE &kp RSHIFT &sk LEFT_CONTROL
 			>;
 		};
 
-		lowered_layer {
-			bindings = <
-				&kp EXCLAMATION &kp AT_SIGN &kp HASH &kp QUESTION &kp AMPERSAND &kp LEFT_ARROW &kp DOWN_ARROW &kp UP_ARROW &kp RIGHT_ARROW &none 
-				&kp ESC &kp TAB &kp BSPC &kp RET &kp DOUBLE_QUOTES &kp COLON &kp PERIOD &kp COMMA &kp SEMICOLON &kp SLASH 
-				&sk RIGHT_ALT &kp UNDERSCORE &kp GRAVE &kp SINGLE_QUOTE &kp TILDE &kp HOME &kp PAGE_DOWN &kp PAGE_UP &kp END &kp K_CONTEXT_MENU
-				&trans &trans &trans &trans &trans &trans
-			>;
-		};
-
-		raised_layer {
+		calc_layer {
 			bindings = <
 				&kp N1 &kp N2 &kp N3 &kp N4 &kp N5 &kp N6 &kp N7 &kp N8 &kp N9 &kp N0
 				&kp KP_LEFT_PARENTHESIS &kp LEFT_BRACKET &kp LEFT_BRACE &kp LESS_THAN &kp PERIOD &kp KP_PLUS &kp MINUS &kp ASTERISK &kp CARET &kp EQUAL
 				&kp KP_RIGHT_PARENTHESIS &kp RIGHT_BRACKET &kp RIGHT_BRACE &kp GREATER_THAN &kp COMMA &kp BACKSLASH &kp PIPE &kp SLASH &kp PERCENT &kp DOLLAR
+			&trans &trans &trans &trans &trans &trans
+		>;
+		};
+
+		util_layer {
+			bindings = <
+				&kp EXCLAMATION &kp AT_SIGN &kp HASH &kp QUESTION &kp AMPERSAND &kp LEFT_ARROW &kp DOWN_ARROW &kp UP_ARROW &kp RIGHT_ARROW &none 
+				&kp ESC &kp TAB &kp BSPC &kp RET &kp DOUBLE_QUOTES &kp COLON &kp PERIOD &kp COMMA &kp SEMICOLON &kp SLASH 
+				&sk RIGHT_ALT &kp UNDERSCORE &kp GRAVE &kp SINGLE_QUOTE &kp TILDE &kp HOME &kp PAGE_DOWN &kp PAGE_UP &kp END &kp K_CONTEXT_MENU
 				&trans &trans &trans &trans &trans &trans
 			>;
 		};
