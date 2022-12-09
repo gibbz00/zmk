@@ -64,12 +64,12 @@
 	};
 
 	behaviors {
-		t1_mod_t2_func_layer: t1_mod_t2_func_layer {
+		t1_ctrl_t2_func_layer: t1_ctrl_t2_func_layer {
 			compatible = "zmk,behavior-tap-dance";
-			label = "T1_MOD_T2_FUNC_LAYER";
+			label = "T1_CTRL_T2_FUNC_LAYER";
 			#binding-cells = <0>;
 			tapping-term-ms = <200>;
-			bindings = <&kp LEFT_GUI>, <&mo FUNCTION>;
+			bindings = <&kp LEFT_CONTROL>, <&mo FUNCTION>;
 		};
 
 		mod_sticky_tap: mod_sticky_tap {
@@ -90,7 +90,7 @@
 				&kp Q &kp W &kp F &kp P &kp B &kp J &kp L &kp U &kp Y &ring_a
 				&kp A &kp R &kp S &kp T &kp G &kp M &kp N &kp E &kp I &kp O
 				&kp Z &kp X &kp C &kp D &kp V &kp K &kp H &diaeresis_a &diaeresis_o &kp SINGLE_QUOTE
-				&kp LEFT_CONTROL &t1_mod_t2_func_layer &lt UTIL_LAYER SPACE &mo PAD &mod_sticky_tap LSHIFT LALT &kp RIGHT_CONTROL
+				&t1_ctrl_t2_func_layer &mt LEFT_GUI ESC &lt UTIL_LAYER SPACE &mo PAD &mod_sticky_tap LSHIFT LALT &kp RIGHT_CONTROL
 			>;
 		};
 
@@ -105,9 +105,9 @@
 
 		util_layer {
 			bindings = <
-				&kp TILDE &kp AT_SIGN &kp HASH &kp DOLLAR &none &none &kp LEFT_BRACKET &kp RIGHT_BRACKET &kp EXCLAMATION &none 
+				&kp TILDE &kp AT_SIGN &kp HASH &kp DOLLAR &none &none &kp RIGHT_BRACKET &kp LEFT_BRACKET &kp EXCLAMATION &none 
 				&kp SEMICOLON &kp COLON &kp BSPC &kp RET &none &kp LEFT_ARROW &kp DOWN_ARROW &kp UP_ARROW &kp RIGHT_ARROW &kp UNDERSCORE 
-				&none &none &kp ESC &kp TAB &none &kp HOME &kp PAGE_DOWN &kp PAGE_UP &kp END &kp GRAVE
+				&none &none &none &kp TAB &none &kp HOME &kp PAGE_DOWN &kp PAGE_UP &kp END &kp GRAVE
 				&trans &trans &trans &trans &trans &trans
 			>;
 		};
